@@ -32,7 +32,7 @@ gem 'schema_associations'
 # Payment engine using Paypal
 #gem 'catarse_paypal_express', git: 'git://github.com/scouttyg/catarse_paypal_express.git'
 #gem 'catarse_paypal_express',           path: '../catarse_paypal_express'
-gem 'catarse_wepay', git: 'git://github.com/alfajango/catarse_wepay.git', branch: 'alfajango'
+#gem 'catarse_wepay', git: 'git://github.com/alfajango/catarse_wepay.git', branch: 'alfajango'
 #gem 'catarse_wepay', path: '~/os/catarse_wepay'
 #-----------------------------------------------------
 
@@ -61,7 +61,7 @@ gem 'ezcrypto'
 gem 'cancan', git: 'git://github.com/ryanb/cancan.git', branch: '2.0', ref: 'f1cebde51a87be149b4970a3287826bb63c0ac0b'
 
 # Email marketing
-gem 'catarse_mailchimp', git: 'git://github.com/catarse/catarse_mailchimp', ref: '45dc426'
+gem 'catarse_mailchimp'
 
 # HTML manipulation and formatting
 gem 'formtastic',   '~> 2.1.1'
