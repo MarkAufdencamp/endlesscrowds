@@ -1,0 +1,48 @@
+#header-container
+  #header.row
+    .logo-container.large-3.small-6.columns
+      = link_to "", root_url, :class => 'logo', :title => Configuration[:company_name]
+    nav.actions.large-5.small-12.columns
+        .button-float-container
+          .header-nav-button
+            = link_to "Home", root_url, :title => Configuration[:company_name]
+          .header-nav-button
+            = link_to "About", about_path, class: 'blog' if Configuration['blog_url'].present?
+          .header-nav-button
+            = link_to "Referrals", referrals_path, class: 'blog' if Configuration['blog_url'].present?
+          .header-nav-button
+            = link_to t('layouts.header.submit_project'), guidelines_start_path, :class =>  'submit_project'
+          .header-nav-button
+            = link_to "#", :id => 'dropdown-explore', :class => 'explore' do
+              = "Explore"
+              = image_tag('dropdown.png', :class => 'dropdown_arrow')
+            - @category_names = Category.pluck(:name_en)
+            ul#dropcontent-explore
+              li= link_to "Explore All Projects", explore_path, :class => "dropdown-top-link"
+              - @category_names.each do |category|
+                li= link_to "#{category}", explore_path(:anchor => "#{category.to_s.parameterize}")
+    div.search.large-2.small-12.columns
+      = form_tag explore_path(:anchor => "search"), :method => 'GET', :class=>'search_input grid-100' do
+        = text_field_tag :search, nil, autocomplete: "off", placeholder: "Search Projects"
+        = submit_tag
+    nav.menu.large-2.small-12.columns
+      - if current_user
+        .header-nav-button
+          = link_to '#', :id => 'dropdown-user', class: 'my_profile_link' do
+            = image_tag(current_user.display_image, :size => "30x30", :class => 'profile_picture')
+            span.current_user_name= t('layouts.header.account')
+            = image_tag('dropdown.png', :class => 'dropdown_arrow')
+          ul#dropcontent-user
+            li= link_to t('layouts.header.profile'), current_user
+            - if current_user.admin?
+              - for menu, path in Adm::BaseController.menu do
+                li= link_to menu, path
+            - if current_user.trustee?
+              - for menu, path in Channels::Adm::ProjectsController.menu do
+                li.channel_trustee= link_to menu, path
+            li.divider
+            li= link_to t('layouts.user.logout'), destroy_user_session_path, method: :delete
+      - else
+        .button-float-container
+          = link_to t('layouts.header.signin'), new_user_session_path, class: 'login'
+          = link_to t('layouts.header.signup'), new_user_session_path(active_register: true), class: 'button join_now'

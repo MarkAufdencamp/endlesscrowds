@@ -1,0 +1,15 @@
+br
+#project_warning.bootstrap-alert
+  .alert.alert-warning
+    i This project has not met its goal.
+    #toggle_warning
+      = link_to '(Minimize)', '#'
+    #project_warning_text
+      br/
+      br/
+      | All money will be refunded to supporters.
+      br/
+      br/
+      | If you have any questions, please contact our support forum. You can find the link below:
+      br/
+      = link_to 'Support Center', Configuration[:support_forum], target: '_blank'

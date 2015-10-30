@@ -1,0 +1,29 @@
+= content_for :title, t('site.title.about')
+= content_for :description, t('site.description.about')
+.mobile-about-splash-image.firefighter-banner
+.about-splash-banner.firefighter-banner.row
+
+#about-page-content.row
+  = image_tag "catarse/EC_shield_icon.png", class: "header-icon"
+  .top.border-line
+  h2.small-centered.small-3.columns About Supporting Firefighters
+  section.large-8.large-centered.columns
+    .large-6.small-12.columns
+      p
+        | No individual in their right mind would wake up one day with the innate desire to walk directly into a swirling tornado of hell-fire, with the possibility of being burned to a crisp. Yet our nation’s firefighters are prepared to do that each and every day for the individual communities they love.
+      p
+        | We often forget all that firefighters really do – it’s not just about battling flames. The best way to refer to a fire department is an “All Emergencies Department” as they are often first responders to just about every emergency you can think of.
+      p
+        | Yet, regardless of their invaluable service, these departments are often the first to get the budgetary axe and lack the necessary resources to protect and serve their communities.
+    .large-6.small-12.columns
+      p
+        | When you help support firefighters through Endless Crowds, you’re helping support a family. Whether it be community outreach, entrepreneurial goals, or individual creative projects, every firefighter is deeply ingrained within their firefighter family and the community in which they reside.
+      p
+        | Raise money with an Endless Crowds project or with our
+        = link_to " Affiliate Program", referrals_path
+        | . Let us help you leverage the network you already have to aid in your fundraising efforts!
+
+  .clearfix
+  .border-decor.small-centered.small-3.columns
+  .border-line.large-8.large-centered.columns
+= render partial: 'bottom_nav'

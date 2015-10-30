@@ -1,0 +1,139 @@
+= content_for :title, t('site.title.guidelines')
+= content_for :description, t('site.description.guidelines')
+#page_content.main
+  #guidelines.container.row
+    #title-banner.large-12.large-centered.columns
+      h2= t('.title')
+      h3= t('.subtitle')
+
+    .wrapper.large-10.large-centered.columns
+      .custom-section-header.large-8.columns
+        h2
+          span.title= "Endless Crowds "
+          | facilitates the exchange among people who together enable the realization of creative projects.
+        section.legend
+          p
+            | We believe that connecting people that share value with respect to a cause, idea, or project is one of the best ways to turn a vision into reality.
+
+          p
+            | Feel at home! This is your space as much as it is ours, after all, happiness happens daily from the meeting of like minds in search of new ways to give life to great ideas.
+
+      article.help-center.large-3.large-offset-1.columns
+        = link_to "Help Center", "https://endlesscrowds.zendesk.com/hc/en-us"
+        = link_to "Contact Us", " https://endlesscrowds.zendesk.com/hc/en-us/requests/new"
+
+      section.steps.large-12.columns
+        ul
+          li.large-4.medium-12.columns
+            .wrapper
+              = image_tag('catarse/EC_guidelines_1.png')
+              h3
+                | 1. Start a campaign
+          li.large-4.medium-12.columns
+            .wrapper
+              = image_tag('catarse/EC_guidelines_2.png')
+              h3
+                | 2. Activate your community
+          li.large-4.medium-12.columns
+            .wrapper
+              = image_tag('catarse/EC_guidelines_3.png')
+              h3
+                | 3. Fund your project
+
+
+      .bottom-nav.container.row
+        .buttons.large-8.large-centered.columns
+          = link_to t('.explore_curious'), guidelines_backers_path, class: "button button-large button-action"
+          = link_to t('.submit'), guidelines_start_path, class: "button button-large button-green"
+        .clearfix
+
+      .container.row
+        small-12.medium-6.columns
+          .list-section-header
+            h2
+              | Access
+            .header-decor.small-4.columns
+            .list-section
+              ul
+                li
+                  span
+                    | Raise money for anything from anywhere around the world.
+
+                li
+                  span
+                    | Fundraising for Organizations &amp; Charities
+
+                li
+                  span
+                    | Fundraising for Individuals
+
+                li
+                  span
+                    | Fundraising created by anyone for any cause to benefit service men and women.
+
+          .list-section-header
+            h2
+              | Options
+            .header-decor.small-4.columns
+            .list-section
+              ul
+                li
+                  span
+                    | Entrepreneurial/Business
+
+                li
+                  span
+                    | Personal/Creative
+
+        small-12.medium-6.columns
+          .list-section-header
+            h2
+              | Affordability
+            .header-decor.small-4.columns
+            .list-section
+              ul
+                li
+                  span
+                    | No upfront cost to launch
+
+                li
+                  span
+                    | Keep the funds you raise (not an “all or nothing” model)
+
+                li
+                  span
+                    | 6% platform fee + payment processing fee
+
+                li
+                  span
+                    | No penalties for missing goal
+
+                li
+                  span
+                    | Get Paid out fast!
+
+          .list-section-header
+            h2
+              | Value
+            .header-decor.small-4.columns
+            .list-section
+              ul
+                li
+                  span
+                    | Set up in minutes
+
+                li
+                  span
+                    | Robust funding platform that makes it quick and easy to raise money
+
+                li
+                  span
+                    | An audience for your project with those looking to aid service men and women
+
+                li
+                  span
+                    | Unique, simple crowdfunding education - guide and tools
+
+                li
+                  span
+                    | Built-in connections to Facebook, Twitter and more make sharing a breeze.

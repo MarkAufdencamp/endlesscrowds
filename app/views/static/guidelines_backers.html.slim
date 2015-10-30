@@ -1,0 +1,85 @@
+= content_for :title, t('site.title.guidelines_backers')
+= content_for :description, t('site.description.guidelines_backers')
+#page_content.main
+  #guidelines-backers.container.row
+    #title-banner.large-12.large-centered.columns
+      h2= t('.title')
+      h3= t('.subtitle')
+
+    .wrapper.large-10.large-centered.columns
+      .section-header.large-12.large-centered.columns
+          h2= t('.introduction')
+      .clearfix
+      .header-decor.small-3.small-centered.columns
+
+      section.legend.large-12.columns
+        h4= t('.legend_html')
+
+      section.steps.large-12.columns
+        ul
+          li.large-3.medium-6.columns
+            .wrapper
+              = image_tag('catarse/EC_backer_1.jpg')
+              h3= t('.title_one')
+              p= t('.step_one')
+          li.large-3.medium-6.columns
+            .wrapper
+              = image_tag('catarse/EC_backer_2.jpg')
+              h3= t('.title_two')
+              p= t('.step_two').html_safe
+          li.large-3.medium-6.columns
+            .wrapper
+              = image_tag('catarse/EC_backer_3.jpg')
+              h3= t('.title_three')
+              p= t('.step_three')
+          li.large-3.medium-6.columns
+            .wrapper
+              = image_tag('catarse/EC_backer_4.jpg')
+              h3= t('.title_four')
+              p= t('.step_four')
+
+    .wrapper-rules.large-12.columns
+      section.rules.large-10.large-centered.columns
+        .circle-icon
+    .clearfix
+
+    .wrapper.large-10.large-centered.columns
+      .section-header.large-12.large-centered.columns
+        h2= t('.more_questions')
+
+      .clearfix
+      .header-decor.small-3.columns
+
+      section.more.large-12.columns
+        .wrapper.large-8.columns
+          ul
+            li
+              = image_tag('catarse/EC_icon_backersucessfull.png')
+              h3= t('.title_backer')
+              p= t('.backer')
+            li.line
+            li
+              = image_tag('catarse/EC_icon_rewards.png')
+              h3= t('.title_rewards')
+              p= t('.rewards')
+
+          .bottom-nav
+            .buttons
+              = link_to "Just Looking Around!", explore_path, class: "button button-large button-action"
+              = link_to "Next Step!", guidelines_tips_path, class: "button button-large button-green"
+            .clearfix
+
+        article.large-4.columns
+          h2= t('.other_backers')
+          p= t('.intro')
+          ul.list_why
+            li
+              h4 1
+              p= t('.other_one')
+            li
+              h4 2
+              p= t('.other_two')
+            li
+              h4 3
+              p= t('.other_three')
+    .clearfix

@@ -1,0 +1,63 @@
+= content_for :title, t('.title')
+#page_content
+  .container.grid-container
+    .static_default.grid-100.grid-container.no-grid-padding
+      .title
+        h1= t('.title')
+        h2= t('.subtitle')
+        h3= t('.introduction_html')
+        p= t('.legend_html')
+
+      .tips.grid-100.no-grid-padding
+        ul
+          li
+            ul.content.grid-container.no-grid-padding
+              li.grid-50.gray
+                = image_tag('catarse/bg_tips1.png')
+                strong= t('.title_one')
+                p= t('.tip_one')
+              li.grid-50.gray
+                = image_tag('catarse/bg_tips2.png')
+                strong= t('.title_two')
+                p= t('.tip_two')
+          li
+            ul.content.grid-container.no-grid-padding
+              li.grid-50
+                = image_tag('catarse/bg_tips3.png')
+                strong= t('.title_three')
+                p= t('.tip_three')
+              li.grid-50
+                = image_tag('catarse/bg_tips4.png')
+                strong= t('.title_four')
+                p= t('.tip_four')
+          li.gray
+            ul.content.grid-container.no-grid-padding
+              li.grid-50.gray
+                = image_tag('catarse/bg_tips5.png')
+                strong= t('.title_five')
+                p= t('.tip_five')
+              li.grid-50.gray
+                = image_tag('catarse/bg_tips6.png')
+                strong= t('.title_six')
+                p= t('.tip_six')
+          li
+            ul.content.grid-container.no-grid-padding
+              li.grid-50
+                = image_tag('catarse/bg_tips7.png')
+                strong= t('.title_seven')
+                p= t('.tip_seven')
+              li.grid-50
+                = image_tag('catarse/bg_tips8.png')
+                strong= t('.title_eight')
+                p= t('.tip_eight')
+      .guide.grid-100
+        .guide_download
+          = link_to '/CompleteGuide.pdf', target: '_blank' do
+            = image_tag('catarse/box_download.png')
+            p= t('.guide')
+
+      .bottom-nav
+        .buttons
+          = link_to "Just Looking Around!", explore_path, class: "button button-large button-action"
+          = link_to "Submit a Project!", new_project_path, class: "button button-large button-green"
+        .clearfix

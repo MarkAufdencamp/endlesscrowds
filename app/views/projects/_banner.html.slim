@@ -1,0 +1,71 @@
+.mobile-splash-image
+.splash-banner.row
+  h2.caption.large-7.large-offset-5.small-10.small-centered.columns
+    | Raise money for projects created by or to benefit Active/Veteran Military, First Responders &amp; their families
+  .large-4.large-offset-5.large-uncentered.small-8.small-centered.columns
+    h4
+      | Crowdfunding with a purpose. Create a project, share your story, start fundraising
+  .buttons.large-3.large-uncentered.medium-8.medium-centered.small-12.columns
+    = link_to "Learn More", guidelines_path, class: "button button-large button-action"
+    = link_to "Get Started", guidelines_start_path, class: "button button-large button-green"
+
+.support-banner.row
+  .header-icon
+  h2.small-centered.small-3.columns We Proudly Support
+  section.categories.large-8.large-centered.columns
+    .military.large-4.large-uncentered.small-8.columns.small-centered
+      .image
+        = image_tag "catarse/EC_scene_military.jpg", class: "military-scene"
+        = image_tag "catarse/EC_shield_military.png", class: "military-icon"
+      h3 Military Veterans
+      .description
+        p
+          | We don’t believe lack of money should stop veterans from living their dream of business ownership. Money for veteran startups? We have them covered.
+        = link_to "Learn More", about_military_path, class: "learn-more"
+
+    .fire.large-4.large-uncentered.small-8.columns.small-centered
+      .image
+        = image_tag "catarse/EC_scene_fire.png", class: "fire-scene"
+        = image_tag "catarse/EC_shield_fire.png", class: "fire-icon"
+      h3 Firefighters
+      .description
+        p
+          | When a municipality faces a budget crisis, money for the fire department is often the first cut. Firefighters with startup ideas? We have them covered.
+        = link_to "Learn More", about_firefighters_path, class: "learn-more"
+
+    .first-responder.large-4.large-uncentered.small-8.columns.small-centered
+      .image
+        = image_tag "catarse/EC_scene_responder.jpg", class: "responder-scene"
+        = image_tag "catarse/EC_shield_responder.png", class: "responder-icon"
+      h3 First Responders
+      .description
+        p
+          | Police and EMT are on the frontlines every day, risking their lives. Helping with money for their startup ideas only makes sense. We have them covered.
+        = link_to "Learn More", about_first_responders_path, class: "learn-more"
+
+.project-categories-banner.row
+  section.categories.large-8.large-centered.columns
+    .community.large-4.large-uncentered.small-8.columns.small-centered
+      article
+        h3 Community Projects
+        .line-break
+        p
+          | Money for projects that increase the quality of life and transform neighborhoods and towns, leaving a tangible impact on those who call these places “home”.
+        = link_to "LEARN MORE", about_community_path
+
+    .entrepreneurial.large-4.large-uncentered.small-8.columns.small-centered
+      article
+        h3 Entrepreneurial Projects
+        .line-break
+        p
+          | Money for startup projects that create jobs, support individuals and families and continue to be the backbone of any stable economy. When small business thrives, the nation thrives!
+        = link_to "LEARN MORE", about_entrepreneurial_path
+
+    .personal-creative.large-4.large-uncentered.small-8.columns.small-centered
+      article
+        h3 Personal/Creative Projects
+        .line-break
+        p
+          | Money for creative projects that add color and vibrancy to our lives and makes the world go around. Your life, your world, your thoughts. Express Yourself!
+        = link_to "LEARN MORE", about_creative_path
+  .circle-icon

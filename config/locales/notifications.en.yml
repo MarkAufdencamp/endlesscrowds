@@ -1,0 +1,58 @@
+en:
+  notifications:
+    project_owner_backer_confirmed:
+      subject: "Hooray! Another new supporter backed your project"
+      header: "A new supporter has just been confirmed for your project"
+    confirm_backer:
+      subject: "Thank you, your support for %{project_name} has been confirmed!"
+      header: "Support Confirmation"
+    payment_slip:
+      subject: "Status of support for %{project_name}: printed slip"
+      header: "Information on bank payment to EndlessCrowds"
+    processing_payment:
+      subject: "Your support for %{project_name} has been recieved and is awaitng conformation from %{payment_method}"
+      header: "Support Analsys - What is it?"
+    updates:
+      subject: "Check it out! update for %{project_name} by %{project_owner}: %{update_title}"
+    project_in_wainting_funds:
+      subject: "The deadline of your project has passed, here are the next steps"
+      header: "We're out of time!"      
+    project_success:
+      subject: "Successful Project: Some Neccesary Steps"
+      header: "Successful Project"
+    project_unsuccessful:
+      subject: "Your project was not funded on EndlessCrowds, but we would like your feedback"
+      header: "Just because your project wasn't funded doesn't mean it can't be Successful"
+    backer_project_successful:
+      subject: "Hurray! The project %{project_name} was successful on EndlessCrowds!"
+      header: "Hurray! The project that you supported was successful on EndlessCrowds!"
+    backer_project_unsuccessful:
+      subject: "The project %{project_name} was not funded - some useful information"
+      header: "Information about credits and refunds"
+    pending_backer_project_unsuccessful:
+      subject: "You have begun to support the project %{project_name}, which was not funded - some useful information"
+      header: "Information about credits and refunds"
+    project_received:
+      subject: "Your project has been received by EndlessCrowds"
+      header: "Your project has been received by the service team at EndlessCrowds"
+    project_received_channel:
+      subject: "Your project has been received on the Channel"
+      header: "Your project has been received by the staff at EndlessCrowds"
+    new_draft_project_channel:
+      subject: "The project %{project_name} has just been created"
+      header:  "The new project is awaiting review"
+    project_visible:
+      subject: "Your project is now live on EndlessCrowds"
+      header: "It's go time!"
+    project_rejected:
+      subject: "Your project does not fit EndlessCrowd's focus"
+      header: "Your project was not accepted"
+    new_draft_project:
+      subject: "New project created - %{project_name}"
+      header: "New project created"
+    new_features:
+      subject: "Help us learn about crowdfunding"
+      header: "Help us learn about crowdfunding"
+    adm_project_deadline:
+      subject: "The project %{project_name} reached the deadline"
+      header: "The project reached the deadline"

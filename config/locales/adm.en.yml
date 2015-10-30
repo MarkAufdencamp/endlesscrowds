@@ -1,0 +1,124 @@
+en:
+  adm: &admin
+    financials:
+      index:
+        id: ID
+        name: 'Name'
+        user: 'User'
+        user_id: 'User ID'
+        goal: 'Goal'
+        total_payment_service_fee: 'Service Fee'
+        total_catarse_fee: 'EndlessCrowds Fee'
+        expires_at: 'Expires at'
+        online_date: 'Live date'
+        pledged: 'Pledged'
+        recommended: 'Recommended?'
+        state: 'State'
+        menu: 'Fin. Reports'
+        title: 'Financial Reports'
+        backer_report: "Backer Reports"
+        search_report: "Search Reports"
+        total_projects: 'Projects'
+        submit: 'Filter'
+        by_state: 'By state'
+        between_expires_at: 'Expires Between'
+        by_progress: By progress %
+    projects:
+      index:
+        by_state: 'By state'
+        between_created_at: 'Created between'
+        id: ID
+        name: 'Title'
+        send_to_draft: 'Send to DRAFT!'
+        reject: 'Reject!'
+        approve: 'Approve!'
+        delete: 'Delete!'
+        user_id: 'User ID'
+        goal: 'Goal'
+        total_backs: 'Backers'
+        online_date: 'Live Date'
+        pledged: 'Pledged'
+        recommended: 'Recommended?'
+        state: 'State'
+        menu: 'Adm. Projects'
+        title: 'Project Management'
+        total_projects: 'Projects'
+        submit: 'Filter'
+        expires_at: 'Expires At'
+        category: 'Category'
+        order_table: 'Order Table'
+        order_date: 'Order Date'
+        order_asc: 'Goal asc'
+        order_desc: 'Goal desc'
+        order_created_at: 'Submission date'
+    actions:
+      confirm: 'Confirm'
+    users:
+      index:
+        title: "Management backers"
+        menu: Backers
+        credits: Credits
+        credits_view: "Calculated credits"
+        id: Id
+        key: Key
+        submit: Search
+        has_credits_difference: "Discrepancy in credits"
+        total_backed: backed
+        total_backers: backers
+        total_backs: Backers
+        total_users: users
+        total_credits: credits
+        total_credits_view: "calculated credits"
+        user: User
+        value: Value
+        payer_email: Payer Email
+        provider: Provider
+    backers:
+      messages:
+        successful:
+          confirm: 'Backer confirmed!'
+          pendent: 'Backer unconfirmed!'
+          refund: 'Backer refunded!'
+          change_reward: 'Reward changed!'
+          hide: 'Backer hided!'
+          cancel: 'Backer canceled!'
+      index:
+        cancel: 'Cancel backer'
+        between_values: 'Between Values'
+        by_state: 'By State'
+        refund_and_hide: 'Refund and hide'
+        backer_info: 'Info of backer %{key}'
+        payment_id: 'Payment ID'
+        payment_method: 'Payment method'
+        payment_choice: 'Payment choice'
+        payer_email: 'Payer email'
+        user_email: 'EndlessCrowds user email'
+        created_at: 'Created at'
+        pending_to_refund: 'Pending to refund'
+        confirm_backer: 'Confirm Backer'
+        unconfirm_backer: 'Unconfirm Backer'
+        refund_backer: 'Refund Backer'
+        title: "Backers management"
+        state: 'State'
+        menu: Backs
+        anonymous: Anonymous?
+        confirmed: Confirmed?
+        credits: "Used credits?"
+        id: Id
+        key: Key
+        no_backers: "No backers found."
+        project: Project
+        refunded: Refunded?
+        requested_refund: "Requested refund?"
+        reward: Reward
+        no_reward: "No reward"
+        submit: Search
+        total_backed: backed
+        total_backers: backers
+        total_backs: backs
+        total_users: Users
+        user: User
+        value: Value
+  channels:
+    adm:
+      <<: *admin

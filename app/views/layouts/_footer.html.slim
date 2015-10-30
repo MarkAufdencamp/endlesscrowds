@@ -1,0 +1,39 @@
+footer.row
+  .divider.divider-top.small-12.columns
+  section.links.large-9.large-centered.columns
+    .information.large-2.small-8.columns
+      ul
+        li= link_to t('footer.links.about'), about_path
+        li= link_to t('footer.links.faq'), 'https://endlesscrowds.zendesk.com/home', target: '_blank'
+        li= link_to t('footer.links.terms'), t('footer.links.terms_link'), target: :_blank
+        li= link_to t('footer.links.policy'), t('footer.links.policy_link'), target: :_blank
+    .information.large-2.small-12.columns
+      ul
+        li= link_to t('footer.links.contact'), 'https://endlesscrowds.zendesk.com/anonymous_requests/new', target: '_blank'
+        li= link_to t('footer.links.affiliate_program'), referrals_path
+        li= link_to t('footer.links.foundation'), foundation_path
+        li= link_to t('footer.links.for_investors'), "https://angel.co/endless-crowds-llc", target: :_blank
+    .newsletter.large-4.small-12.columns
+      h3= t('footer.titles.newsletter')
+      p= "Get the lastest news delivered to you!"
+      = form_tag "#{Configuration['mailchimp_url']}", id: 'mailee-form', method: 'post' do
+        = text_field_tag 'EMAIL', nil, placeholder: 'email@example.com', label: 'email'
+        = submit_tag "#{t('newsletter_subscribe')}"
+    .social.large-4.small-12.columns
+      h3= t('footer.titles.social')
+      ul.links
+        li.youtube
+          = link_to "", "http://www.youtube.com/channel/UCvfXIoF-GO8WZYYFHYOMUMg", target: :_blank
+        li.facebook_ec
+          = link_to "", "https://www.facebook.com/EndlessCrowds", target: :_blank
+        li.google
+          = link_to "", "https://plus.google.com/103190949899731285684", target: :_blank, rel: :publisher
+        li.twitter
+          = link_to "", "http://twitter.com/#{Configuration['twitter_username']}", target: :_blank
+        li.instagram
+          = link_to "", "http://instagram.com/endlesscrowds", target: :blank
+  .divider.divider-section.small-12.columns
+  section.small-12.columns
+    .copyright.large-9.large-centered.columns
+      = t('footer.copyright', year: Date.today.year).html_safe
+  .divider.divider-bottom.small-12.columns

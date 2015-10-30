@@ -1,0 +1,105 @@
+= content_for :title, t('site.title.guidelines_start')
+= content_for :description, t('site.description.guidelines_start')
+#page_content.main
+  #guidelines-start.container.row
+    #title-banner.large-12.large-centered.columns
+      h2= t('.title')
+      h3= t('.subtitle')
+
+    .wrapper.large-10.large-centered.columns
+      .section-header.large-12.large-centered.columns
+          h2= t('.introduction')
+      .clearfix
+      .header-decor.small-3.small-centered.columns
+
+      section.legend.large-12.columns
+        h4= t('.legend_html')
+
+      section.steps.large-12.columns
+        ul
+          li.large-3.medium-6.columns
+            .wrapper
+              = image_tag('catarse/EC_step_1.png')
+              h3= t('.title_one')
+              p= t('.step_one')
+          li.large-3.medium-6.columns
+            .wrapper
+              = image_tag('catarse/EC_step_2.png')
+              h3= t('.title_two')
+              p= t('.step_two').html_safe
+          li.large-3.medium-6.columns
+            .wrapper
+              = image_tag('catarse/EC_step_3.png')
+              h3= t('.title_three')
+              p= t('.step_three')
+          li.large-3.medium-6.columns
+            .wrapper
+              = image_tag('catarse/EC_step_4.png')
+              h3= t('.title_four')
+              p= t('.step_four')
+
+    .wrapper-rules.large-12.columns
+      section.rules.large-10.large-centered.columns
+        .circle-icon
+        h2= t('.title_requirements')
+        .rule-1.large-3.columns
+          = image_tag('catarse/EC_rule_1.png')
+          p= t('.creative')
+        .rule-2.large-3.columns
+          = image_tag('catarse/EC_rule_2.png')
+          p= t('.colective')
+        .rule-3.large-3.columns
+          = image_tag('catarse/EC_rule_3.png')
+          p= t('.nonprofit')
+        .rule-4.large-3.columns
+          = image_tag('catarse/EC_rule_4.png')
+          p= t('.video')
+    .clearfix
+
+    .wrapper.large-10.large-centered.columns
+      .section-header.large-12.large-centered.columns
+        h2= t('.more_questions')
+
+      .clearfix
+      .header-decor.small-3.columns
+
+      section.more.large-12.columns
+        .wrapper.large-8.columns
+          ul
+            li
+              = image_tag('catarse/EC_icon_magic.png')
+              h3= t('.title_magic')
+              p= t('.magic')
+            li
+              = image_tag('catarse/EC_icon_money.png')
+              h3= t('.title_money')
+              p= t('.money')
+            li.line
+            li
+              = image_tag('catarse/EC_icon_work.png')
+              h3= t('.title_work')
+              p= t('.work')
+            li
+              = image_tag('catarse/EC_icon_costs.png')
+              h3= t('.title_costs')
+              p= t('.costs')
+          .bottom-nav
+            .buttons
+              = link_to "Just Looking Around!", explore_path, class: "button button-large button-action"
+              = link_to "Next Step!", guidelines_tips_path, class: "button button-large button-green"
+            .clearfix
+
+        article.large-4.columns
+          h2= t('.why')
+          p= t('.intro')
+          ul.list_why
+            li
+              h4 1
+              p= t('.why_one')
+            li
+              h4 2
+              p= t('.why_two')
+            li
+              h4 3
+              p= t('.why_three')
+

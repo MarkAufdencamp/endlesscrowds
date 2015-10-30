@@ -1,0 +1,18 @@
+= content_for :title, t('site.title.about')
+= content_for :description, t('site.description.about')
+.mobile-about-splash-image.foundation-banner
+.about-splash-banner.foundation-banner.row
+
+#about-page-content.row
+  = image_tag "catarse/EC_shield_icon.png", class: "header-icon"
+  .top.border-line
+  h2.small-centered.small-3.columns Foundation
+  section.large-8.large-centered.columns
+    .large-6.small-12.columns
+
+      p coming soon!
+
+  .clearfix
+  .border-decor.small-centered.small-3.columns
+  .border-line.large-8.large-centered.columns
+= render partial: 'bottom_nav'

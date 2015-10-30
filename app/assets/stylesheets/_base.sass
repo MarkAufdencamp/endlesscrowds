@@ -1,0 +1,73 @@
+a
+  text-decoration: none
+
+// foundation overrides
+.row
+  width: 100%
+  max-width: 100%
+
+.button
+  color: $txt_light
+  display: block
+  text-transform: uppercase
+  text-decoration: none
+  text-align: center
+  font-family: serif
+  &.button-action
+    background-color: $button_action
+    &:hover
+      background-color: $button_action_hover
+  &.button-green
+    background-color: $button_green
+    &:hover
+      background-color: $button_green_hover
+
+.button-large
+  padding: 17px 0
+  margin: 20px 0 10px 0
+
+#title-banner
+  padding: 20px 0 20px 0
+  margin-bottom: 40px
+  background-image: url($images_path + "EC_eagle.jpg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: 100%
+  text-align: center
+  h2
+    font-size: 2em
+  h3
+    font-size: 1.25em
+
+.circle-icon
+  background-image: url($images_path + "EC_circle_icon.png")
+  width: 42px
+  height: 42px
+  position: absolute
+  margin-left: auto
+  margin-right: auto
+  left: 0
+  right: 0
+  top: -60px
+
+// ON USER LOGIN PAGE - MOVE TO SESSIONS FOLDER WHEN CREATED
+.facebook_start
+  +border-radius(4px)
+  width: 286px
+  background: image-url("login_with_facebook_button310x60.png") left top no-repeat
+  padding: 29px 10px 10px 64px
+  color: white
+  font-size: 13px
+  font-family: Arial
+  text-decoration: none
+  +text-shadow(black, 1px, 1px, 1px)
+  text-align: left
+  &:hover, &:focus
+    +box-shadow(rgba(black,0.75) 0px 0px 5px inset !important)
+  &:active
+    +box-shadow(rgba(black, 1) 0px 0px 15px inset !important)
+  display: block
+#new-session-bottom-padding
+  height: 250px
+  background-color: white
+

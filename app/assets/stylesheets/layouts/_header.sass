@@ -1,0 +1,195 @@
+$header-height: 81px
+
+#header-container
+  position: fixed
+  width: 100%
+  background-color: $bkg_light
+  z-index: 100
+#header
+  padding: 7px 10px 0 10px
+  margin: 0 auto
+  display: block
+  .logo
+    float: left
+    height: 54px
+    width: 228px
+    padding-top: 5px
+    border: none
+    background: url($images_path+"EC_logo.png") left top no-repeat
+    background-size: 100%
+  nav
+    a
+      @extend .serif-title
+      font-weight: 700
+      color: $txt_medium
+      &:hover
+        color: #444
+      text-decoration: none
+    &.actions
+      padding: 9px 0 0 0
+      a
+        font-size: 15px
+        &.explore
+          .dropdown_arrow
+            margin-left: 7px
+            line-height: 16px
+            vertical-align: middle
+    &.menu
+      text-align: center
+      margin-top: 10px
+      a
+        font-size: 14px
+        float: left
+        &.join_now
+          color: $txt-light
+          background-color: $button_action
+        &.my_profile_link
+          width: 130px
+          display: block
+          float: right
+          margin-right: 0
+          img.profile_picture
+            +border-radius(1px)
+            border: solid 1px $border_light
+            position: relative
+            float: left
+            margin-top: -9px
+            margin-right: 5px
+          &:hover
+            img.profile_picture
+              border-color: $border_light
+          .current_user_name
+            float: left
+            margin-right: 5px
+          .dropdown_arrow
+            float: left
+            position: relative
+            margin-top: 7px
+        &:hover
+          color: #333
+  #dropcontent-explore, #dropcontent-user
+    display: none
+    position: fixed
+    background-color: $bkg-light
+    padding: 15px
+  .search
+    form
+      margin-top: 20px
+      height: 30px
+      +border-radius(2px)
+      border: solid 1px $border_light
+      input[type="text"]
+        border: none
+        width: 80%
+        height: 100%
+        float: left
+        padding: 0
+        margin: 0
+        box-shadow: none
+        &:focus
+          outline: none
+      input[type="submit"]
+        background: url($images_path+"search_submit15x15.png") left top no-repeat
+        width: 15px
+        height: 15px
+        border: none
+        text-indent: -9999em
+        float: right
+        margin: 7px 5px 0 0px
+
+// RESPONSIVE DESIGN STYLES:
+
+// 1. Media Changes for Mobile ONLY
+@media screen and (max-width: $media-mobile-max)
+
+// 2. Media Changes for Mobile AND Tablet
+@media screen and (max-width: $media-tablet-max)
+  body
+    margin-top: 0px
+    background: none
+    width: 100%
+  #header-container
+    margin-top: 0px
+    position: relative
+  #header
+    .logo-container
+      width: 100%
+      height: 55px
+      .logo
+        display: block
+        margin: auto
+        float: none
+    nav.actions a
+      display: block
+      width: 100%
+      text-align: center
+      padding: 15px 1px
+      border-bottom: 1px solid #999999
+    nav.menu
+      a.login, a.join_now
+        width: 100%
+        margin: 5px auto
+        padding: 7px 14px
+        display: block
+        float: none
+        background-color: #FF0000
+        color: white
+      a.login
+        padding-left: 0
+        margin-left: 0
+    nav .header-nav-button
+      width: 100%
+    #dropcontent-explore
+      position: relative
+    #page_content
+      margin-top: 0px
+
+// Media Changes for Tablet ONLY
+@media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max)
+
+// 4. Style changes for Desktop only
+// 4a. confined desktop
+@media screen and (min-width: $media-desktop-min)
+  body
+    margin-top: $header-height
+  #header-container
+    margin-top: -$header-height
+    padding-top: 8px
+  #header
+    height: $header-height
+    border-bottom: solid 1px #e7e7e7
+    nav.actions
+    .header-nav-button
+      float: left
+      margin-right: 12px
+      margin-top: 10px
+    .search
+      height: $header-height
+      border-right: solid 1px $border_light
+      border-left: solid 1px $border_light
+      padding-top: 5px
+      margin-top: -10px
+    .button-float-container
+      float: right
+    nav.menu
+      a.login
+        padding: 13px 5px
+      a.join_now
+        padding: 13px 8px
+        margin: -2px 0 0 0
+
+// 4a. expanded desktop
+@media screen and (min-width: $media-large-desktop-min)
+  #header
+    nav.actions
+      padding
+    .header-nav-button
+      margin-right: 20px
+    nav.menu
+      a.login
+        padding: 13px 14px 13px 0
+      a.join_now
+        padding: 13px 14px 13px 12px
+        margin: 0 10px
+
+

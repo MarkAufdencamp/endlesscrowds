@@ -1,0 +1,17 @@
+- backer = @notification.backer
+|Hi, #{backer.user.name}!
+br
+br
+|Unfortunately the project #{link_to(backer.project.name, "#{Configuration[:base_url]}/projects/#{backer.project.to_param}")} that you backed did not reach its goal and wasn't funded on #{Configuration[:company_name]}.
+br
+br
+|If, for any reason, you want to contact #{backer.project.user.display_name}, send an email to #{mail_to backer.project.user.email}.
+br
+br
+|If you have any questions, access our #{link_to('FAQ',"https://endlesscrowds.zendesk.com/home")} or send an email to #{mail_to Configuration[:email_payments]}.
+br
+br
+|A big hug,
+br
+br
+|#{Configuration[:company_name]} Team

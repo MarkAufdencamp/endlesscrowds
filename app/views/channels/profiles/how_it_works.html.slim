@@ -1,0 +1,31 @@
+= content_for(:title, t('channels.how_it_works.title', channel: @profile.name))
+
+#how_it_works.channels
+  #page_content.projects
+    .container
+      h1 EndlessCrowds wants to help people who are active / veteran military, firefighters, and first responders.
+      hr
+      p.headline
+        | We support your projects by leveraging our network of online and offline resources.
+  #page_content.how_to_participate
+    .container
+      .how
+        .first
+          h2 To Participate
+          ul.topics
+            li 
+              | Understanding how EndlessCrowds works is essential to participate. Check out the link below to learn more:
+              = link_to 'Learn More', 'https://endlesscrowds.zendesk.com/home', target: '_blank' 
+              |. 
+            li Your project needs to be based on helping active / veteran military, firefighters, and first responders.
+
+        .last
+          h2 Last Details
+          ul.topics
+            li It is of the upmost importance that you follow all rules set out in the TOS and Privacy Policy
+  #page_content.send_your_project
+    span
+      | Have a project that meets these requirements?
+      = link_to t('channels.send_your_project'), new_project_path, class: [:ch_button, :ch_button_ok, :ch_button_green], title: t('channels.accessibility.send_your_project')
+
+= render 'footer'

@@ -1,0 +1,22 @@
+br
+#project_warning.bootstrap-alert
+  .alert.alert-warning
+    i Attention!  This project has not yet been published...
+    #toggle_warning
+      = link_to '(minimize)', '#'
+    #project_warning_text
+      br/
+      br/
+      ' This project is still in the moderation queue, meaning that the information below can be edited until the the project is published by our staff. So if you need to change something, edit away!
+      br/
+      br/
+      '<strong>Warning:</strong> EndlessCrowds is a curated platform, with means that the moderators will be focused on the viability, the reasonableness, and the good it does for the community.
+      ' Be sure to take a look at our
+      = link_to 'Criteria for Selection', 'http://docs.google.com/document/d/1Heh9LlvoSoD0lUfbmV5WlISJ3nqmGpEQiw15TBuCn-0/edit', target: '_blank'
+      |  page in more depth to understand how a project gets published on EndlessCrowds.
+      br/
+      br/
+      | Questions or feedback? Feel free to send us any of your thoughts throughout the process =)
+      br/
+      ' To do this please go to our 
+      = link_to 'Support Center', Configuration[:support_forum], target: '_blank'

@@ -1,0 +1,32 @@
+= content_for :title, t('site.title.about')
+= content_for :description, t('site.description.about')
+.mobile-about-splash-image.military-banner
+.about-splash-banner.military-banner.row
+
+#about-page-content.row
+  = image_tag "catarse/EC_shield_icon.png", class: "header-icon"
+  .top.border-line
+  h2.small-centered.small-3.columns About Supporting Miliary Veterans
+  section.large-8.large-centered.columns
+    .large-6.small-12.columns
+      p
+        | Endless Crowds is the fundraising platform for Military Veterans and First Responders (EMS, FireFighters, Police, etc) to raise money for entrepreneurial endeavors and community initiatives.
+      p
+        | It takes a special type of person to enlist in any branch of the armed forces, knowing full-well they are giving away years of their life to their country with the distinct possibility and preparedness to die during that process. It’s certainly not the pay, or the benefits, or the accommodations that they sign up for – it’s a love of country and a stern duty to serve.
+      p
+        | Yet, many of our country’s troops, both active and veteran - despite the verbal commendations and passing salutes of respect – often find themselves both undervalued and underappreciated; at times, even forgotten.
+    .large-6.small-12.columns
+      p
+        | At Endless Crowds, we refuse to accept this as a reality. Our platform is designed to build a community of immense support around our country’s troops and provide them with an unmatched ability to network, raise money, create jobs, drive innovation, and support their fellow brothers and sisters in arms.
+      p
+        | We know and believe that the most courageous among us deserve the greatest support system we – as a community – can offer.
+      p
+        | Raise money with an Endless Crowds project or with our
+        = link_to " Affiliate Program", referrals_path
+        | . Let us help you leverage the network you already have to aid in your fundraising efforts!
+  .clearfix
+  .border-decor.small-centered.small-3.columns
+  .border-line.large-8.large-centered.columns
+= render partial: 'bottom_nav'
+
+

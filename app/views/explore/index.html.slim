@@ -1,0 +1,53 @@
+- content_for :js_templates do
+  = render partial: 'project', locals: { custom_class: 'large-4 medium-6 small-12 columns' }
+
+#page_content.main
+  #explore-projects.container.row
+    #title-banner.large-12.large-centered.columns
+      h2= t('.title')
+      h3= t('.subtitle')
+    .wrapper.large-10.large-centered.columns
+      .section_header.large-12.columns
+        .original_title
+          h1
+            span= t('.section_title')
+
+      .section-underline.large-12.columns
+        div.thick-underline.large-3.columns
+        div.thin-underline.large-12.columns
+
+      #explore_results.large-9.columns
+        .results &nbsp;
+        #loading= image_tag "loading.gif"
+
+      .sidebar.large-3.columns
+        .content
+          - unless @recommended.empty? and @expiring.empty? and @recent.empty? and @successful.empty?
+            section.highlights
+              h2= t('.quick_explore')
+              ul#explore_quick
+                - unless @recommended.empty?
+                  li
+                    a href='#recommended'
+                      = t('.recommended')
+                - unless @expiring.empty?
+                  li.no_margin
+                    a href='#expiring'
+                      = t('.expiring')
+                - unless @recent.empty?
+                  li
+                    a href='#recent'
+                      = t('.recent')
+                - unless @successful.empty?
+                  li.no_margin
+                    a href='#successful'
+                      = t('.successful')
+
+          - unless @categories.empty?
+            section.categories
+              h2= t('.categories')
+              ul#explore_categories
+                - @categories.each_with_index do |category, index|
+                  li class="#{(index%2==1 ? 'no_margin':'')}"
+                    a href="##{category.to_s.parameterize}" data-id=category.id
+                      = category

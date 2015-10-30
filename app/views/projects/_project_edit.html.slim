@@ -1,0 +1,43 @@
+.bootstrap-form
+  = semantic_form_for @project do |form|
+    = form.inputs do
+      - if current_user.admin
+        = form.input :expires_at, as: :string
+        = form.input :user_id
+        = form.input :permalink, as: :string
+      - if can? :update, @project, :name
+        = form.input :name, as: :string, required: false
+      - if can? :update, @project, :headline
+        = form.input :headline, as: :string, required: false
+      - if can? :update, @project, :category
+        = form.input :category, as: :select, required: false
+      - if can? :update, @project, :video_url
+        = form.input :video_url, as: :string, hint: t('formtastic.hints.project.video_url_edit'),required: false
+      - if can? :update, @project, :uploaded_image
+        = form.input :uploaded_image, as: :file, required: false,
+          hint: (@project.uploaded_image.present? ? image_tag(@project.uploaded_image.project_thumb.url, size: '220x172') : t('formtastic.hints.project.uploaded_image') )
+      - if can? :update, @project, :online_days
+        = form.input :online_days, as: :number, required: false
+      - if can? :update, @project, :goal
+        = form.input :goal, as: :number, required: false
+      - if can? :update, @project, :about
+        = form.label :about, t('formtastic.labels.project.about')
+        = render 'project_wysihtml5'
+        = form.text_area :about, required: false
+        .tips
+          h3 Formatting Tips
+          = image_tag "catarse/icon_media.png"
+          p If you paste the url of an image or a video from Youtube or Vimeo, they will appear in the description of the idea. Try it!
+          = image_tag "catarse/icon_url.png"
+          p When you paste a url any, it will become a link. For example, http://www.google.com becomes <a href="http://www.google.com">http://www.google.com</a>
+          = image_tag "catarse/icon_linktext.png"
+          p If you want to put text in link, simply use the following format: "text you want":http://google.com. For example, that example will turn into <a href="http://www.google.com">text you want</a>.
+          = image_tag "catarse/icon_bold.png"
+          p
+            | You can use bold by adding two asterisks (**) before and after the text you want to format. For example, **bold text** will appear as <b>bold text</b>
+          = image_tag "catarse/icon_italic.png"
+          p
+            |You can use italic by adding an underscore (_) before and after the text you want to format. For example, _my text_ text will appear as <i>my text</i>
+      .clearfix
+      .form-actions.bootstrap-twitter
+        = form.submit class: 'btn'

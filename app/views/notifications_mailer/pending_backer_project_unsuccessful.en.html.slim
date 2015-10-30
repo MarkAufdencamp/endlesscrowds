@@ -1,0 +1,32 @@
+- backer = @notification.backer
+|Hello, #{backer.user.name}!
+br
+br
+|Unfortunately the project #{link_to(backer.project.name, "#{Configuration[:base_url]}/projects/#{backer.project.to_param}")} did not reach the established goal and was not funded on #{Configuration[:company_name]}.
+br
+br
+|We saw in our database that you started the process of supporting this project a few days ago.
+br
+br
+b If you have NOT completed supportting the project
+|, you may disregard this email.
+br
+br
+b If you have completed supporting this project,
+|,  but have received no confirmation yet (this can happen in some cases), you should receive it in the coming days.
+br
+br
+|If for any reason you want to contact #{backer.project.user.display_name}, send an email to #{mail_to backer.project.user.email}.
+br
+br
+|If you have any other questions, please contact us in our Support Center:
+br
+= link_to 'https://endlesscrowds.zendesk.com/home', 'https://endlesscrowds.zendesk.com/home'
+br
+|Key Support: #{backer.key}
+br
+br
+|Regards,
+br
+br
+|The #{Configuration[:company_name]} team

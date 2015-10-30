@@ -1,0 +1,33 @@
+- backer = @notification.backer
+- project = backer.project
+
+|Hello, <strong>#{project.user.display_name}</strong>!
+br
+br
+|The supporter #{link_to backer.user.display_name, user_url(backer.user)} just helped  you with your project! 
+br
+br
+|Some extra data:
+br
+br
+|<strong>Value Supported:</strong> #{backer.display_value}
+br
+br
+|<strong>Reward Selected:</strong> #{backer.reward.display_description}
+br
+br
+|<strong>Email Address:</strong> #{backer.user.email}
+br
+br
+|See other supporters here #{link_to project_by_slug_url(permalink: project.permalink, anchor: 'backers'), project_by_slug_url(permalink: project.permalink, anchor: 'backers')}
+br
+br
+|Communicate with them from the news: #{link_to project_by_slug_url(permalink: project.permalink, anchor: 'updates'), project_by_slug_url(permalink: project.permalink, anchor: 'updates')}
+br
+br
+|Download their reports: #{link_to project_by_slug_url(permalink: project.permalink, anchor: 'reports'), project_by_slug_url(permalink: project.permalink, anchor: 'reports')}
+br
+br
+|Regards,
+br
+|The #{Configuration[:company_name]} team

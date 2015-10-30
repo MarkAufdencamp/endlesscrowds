@@ -1,0 +1,24 @@
+br
+#project_warning.bootstrap-alert
+  .alert.alert-warning
+    i After the project deadline passes!
+    #toggle_warning
+      = link_to '(Minimize)', '#'
+    #project_warning_text
+      br/
+      br/
+      | During the 3 days after the project contribution deadline passes, your project will await confirmations of any contributions made last minute.
+      br/
+      br/
+      ' If your project reaches its goal, the transfer of money held as follows:
+      ' The payment will be made within 5 business days after the closing date of the project. 
+      ' Note: it may take up to 4 work days for the money to show up in your account.
+      br/
+      br/
+      ' If your project does not reach its goal, all money will be refunded to supporters.
+      br/
+      br/
+      ' Feel free to send us questions and feedback throughout the process.
+      br/
+      ' To do this please visit our
+      = link_to 'Support Center', Configuration[:support_forum], target: '_blank'

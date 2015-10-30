@@ -1,0 +1,12 @@
+#wysihtml5-toolbar a {
+  display: inline-block;
+  padding: 4px 6px;
+  margin: 2px;
+  background: #ccc;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  text-decoration: none;
+  min-width: 15px;
+  text-align: center;
+}

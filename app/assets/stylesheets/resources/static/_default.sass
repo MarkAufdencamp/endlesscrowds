@@ -1,0 +1,532 @@
+// TODO: move these styles into pages in static/ corresponding to the views
+[data-controller="static"]
+  #page_content
+    .modal-guideline
+      width: 1000px
+      margin-left: -500px
+      padding-top: 10px
+    .container
+      .static_default
+        //
+        padding-top: 15px
+        .title
+          //
+
+          padding-bottom: 40px
+          h1
+            color: #898989
+            font-family: "serif"
+            font-size: 24px
+            padding: 0 0 5px 50px
+            margin-top: 20px
+            background: url($images_path+'icon_new.png') left top no-repeat
+            &.backer
+              background: url($images_path+'icon_guidebacker.png') left top no-repeat
+              height: 27px
+            &.start
+              background: url($images_path+'icon_guidelinesstart.png') left top no-repeat
+              height: 40px
+            &.faq
+              background: url($images_path+'icon_faq.png') left top no-repeat
+              height: 40px
+          h2
+            color: #898989
+            font-family: "serif"
+            font-size: 14px
+            padding-left: 50px
+            padding-bottom: 15px
+            border-bottom: 1px dotted #CCCCCC
+            &.backer
+              margin-top: -3px
+            &.start
+              margin-top: -17px
+            &.faq
+              margin-top: -17px
+          h3
+            color: #F28D0B
+            font-size: 21px
+            font-family: "serif"
+            font-style: italic
+            margin-top: 46px
+            line-height: 24px
+            width: 100%
+            text-align: center
+            &.backer
+              color: #6BB344
+            &.start
+              color: #C3996B
+          p
+            font-family: "serif"
+            font-style: italic
+            color: #666666
+            font-size: 16px
+            text-align: center
+            line-height: 21px
+            padding-top: 20px
+            margin: 0 auto
+            &.start
+              width: 620px
+
+        .requirements
+          background: #f7f7f7
+          border-bottom: 1px solid #ddd
+          border-top: 1px solid #ddd
+          padding-bottom: 30px
+          padding-left: -20px
+          padding-top: 30px
+          .rules-header
+            color: #F28D0B
+            font-size: 18px
+            font-family: "serif"
+            font-weight: bold
+            margin-top: 23px
+            text-shadow: 1px 1px white
+            &.backer
+              color: #6BB344
+              width: 200px
+              font-size: 18px
+              margin-top: 35px
+          .rules-section
+            font-family: "serif"
+            font-style: italic
+            color: #5D5D5D
+            font-size: 14px
+            text-shadow: 1px 1px white
+            padding-left: 50px
+            height: 50px
+            padding-top: 10px
+            &.spacer
+              height: 1px
+            &.creative
+              height: 50px
+              background: url($images_path+'icon_creative.png') left top no-repeat
+              padding-left: 30px
+            &.colective
+              background: url($images_path+'icon_colective.png') left top no-repeat
+              padding-left: 60px
+              height: 50px
+              //margin-left: 10px
+            &.nonprofit
+              background: url($images_path+'icon_nonprofit.png') left top no-repeat
+              padding-left: 40px
+              height: 50px
+            &.donation
+              background: url($images_path+'icon_donation.png') left top no-repeat
+              padding-left: 40px
+              height: 50px
+            &.video
+              padding-left: 50px
+              background: url($images_path+'icon_video.png') left 10px no-repeat
+              margin-right: 0px
+              height: 50px
+            &.sucessfull, &.not_funded
+              background: url($images_path+'icon_projectsuccess.png') left 10px no-repeat
+              width: 250px
+              height: 50px
+              padding-top: 0px
+              height: auto
+              padding-left: 45px
+              span
+                font-family: serif
+                font-style: italic
+                font-size: 14px
+                color: #333333
+                margin: 0px
+                width: 250px
+                line-height: 16px
+              p
+                width: 233px
+                font-family: serif
+                font-style: italic
+                margin-top: 10px
+                float: left
+                text-shadow: none
+                line-height: 16px
+                font-size: 13px
+            &.not_funded
+              background: url($images_path+'icon_projectnotfunded.png') left 10px no-repeat
+              p
+                width: 280px
+              a
+                color: #6BB344
+                text-decoration: none
+
+          ul.list
+            //width: 750px
+            height: 60px
+            //float: left
+            //margin-left: 60px
+            //margin-top: 35px
+            &.backer
+              //width: 680px
+              margin-top: 13px
+              height: auto
+            li
+              float: left
+              margin-right: 10px
+              //width: 125px
+              font-family: "serif"
+              font-style: italic
+              color: #5D5D5D
+              font-size: 14px
+              text-shadow: 1px 1px white
+              padding-left: 50px
+              height: 50px
+              padding-top: 10px
+        .more_questions
+          color: #666666
+          margin-top: 10px
+          float: left
+          width: 100%
+          font-size: 21px
+          font-family: "serif"
+          font-style: italic
+          line-height: 24px
+          ul.questions
+            float: left
+            margin-top: 40px
+            li
+              //width: 500px
+              float: left
+              padding-left: 45px
+              img
+                float: left
+                margin-left: -45px
+              strong
+                font-family: Arial
+                color: #666666
+                font-size: 14px
+                display: block
+                line-height: 18px
+                font-weight: bold
+                margin-bottom: 10px
+              p
+                font-family: Arial
+                color: #666666
+                line-height: 21px
+                font-size: 13px
+            li.line
+              height: 1px
+              width: 100%
+              padding: 0px
+              border-top: 1px dotted #CCCCCC
+              margin: 30px 0
+            li + li
+              margin-left: 20px
+            li.line + li
+              margin-left: 0px
+
+            .center_form
+              text-align: center
+              float: left
+              &.backer
+                margin-top: 40px
+              .bootstrap-twitter
+                margin-left: 60px
+                .curious
+                  position: relative
+                  float: left
+                  .btn_explore
+                    float: left
+                    width: 240px
+                    background: #6BB544 url($images_path+'button_explore.png') 15px 6px no-repeat
+                    border: solid 1px #578A3F
+                    height: 49px
+                    padding-top: 13px
+                    text-transform: uppercase
+                    color: white
+                    text-shadow: 1px 1px #4C8132
+                    font-family: "serif"
+                    font-style: italic
+                    font-size: 15px
+                    text-indent: 35px
+                    +border-radius(15px)
+                    &.backer
+                      width: 214px
+                      text-indent: 0px
+                      height: 47px
+                      padding-top: 15px
+                      background: #6BB544 url($images_path+'icon_submitbacker.png') 10px 13px no-repeat
+                  span
+                    color: white
+                    text-shadow: 1px 1px #4C8132
+                    font-family: "serif"
+                    font-style: italic
+                    font-size: 14px
+                    position: absolute
+                    top: 32px
+                    left: 58px
+                .send
+                  position: relative
+                  float: left
+                  margin-left: 30px
+                  .btn_send
+                    float: left
+                    width: 240px
+                    background: #F28E0B url($images_path+'button_send.png') 15px 11px no-repeat
+                    border: solid 1px #C8760A
+                    height: 49px
+                    padding-top: 13px
+                    text-transform: uppercase
+                    color: white
+                    text-shadow: 1px 1px #C8760A
+                    font-family: "serif"
+                    font-weight: 700
+                    font-size: 15px
+                    text-indent: 24px
+                    +border-radius(15px)
+                    &.backer
+                      width: 228px
+                      text-indent: 37px
+                      padding-top: 15px
+                      height: 47px
+                      margin-right: 30px
+                  span
+                    color: white
+                    text-shadow: 1px 1px #C8760A
+                    font-family: "serif"
+                    font-style: italic
+                    font-size: 14px
+                    position: absolute
+                    top: 32px
+                    left: 68px
+
+
+          .why-endless-crowds
+            float: right
+            margin: 20px 0 0 0
+            padding: 0
+            background: #F3F3F3
+            border: 1px solid #EDEDED
+            img
+              margin-left: -10px
+              margin-top: 20px
+              float: left
+            span
+              font-family: "serif"
+              font-weight: bold
+              font-size: 14px
+              color: white
+              background: #F28E0B
+              padding: 4px 10px
+              float: left
+              text-transform: uppercase
+              margin-top: 20px
+              &.backer
+                background: #74B84F
+                line-height: 20px
+            strong
+              font-family: "serif"
+              font-style: italic
+              color: #666666
+              font-size: 14px
+              display: block
+              line-height: 18px
+              float: left
+              width: 90%
+              margin-top: 20px
+              margin-left: 15px
+            ul.list_why
+              margin-top: 20px
+              float: left
+              li
+                border-bottom: 1px dotted #CCCCCC
+                padding-bottom: 20px
+                margin-top: 20px
+                label
+                  margin-left: -9px
+                  float: left
+                  color: white
+                  font-family: "serif"
+                  font-size: 16px
+                  text-align: center
+                  background: url($images_path+'label_orange_list.png') top left no-repeat
+                  width: 25px
+                  height: 30px
+                  &.backer
+                    background: url($images_path+'label_green_list.png') top left no-repeat
+                p
+                  font-family: Arial
+                  color: #666666
+                  line-height: 18px
+                  font-size: 12px
+                  padding: 0px 15px 0 30px
+
+        #how_it_works.alert
+          font-family: Arial
+          font-size: 15px
+          line-height: 140%
+          strong
+            font-weight: bold
+          a
+            color: $fire
+        .default_text
+          b
+            font-weight: bolder
+          a
+            color: $blue
+          padding-top: 20px
+          h2
+            font-family: 'serif'
+            font-weight: bold
+            font-size: 18px
+            color: rgba($green, 0.9)
+            padding-bottom: 10px
+          h3
+            font-family: Arial
+            font-weight: bold
+            font-size: 15px
+            color: rgba(black, 0.9)
+            padding-bottom: 5px
+          p, ul, ol
+            font-family: Arial
+            font-size: 15px
+            line-height: 130%
+            padding-bottom: 15px
+            color: rgba(black, 0.7)
+          ol
+            padding: 10px 30px
+            li
+              padding-bottom: 10px
+              list-style: decimal inside
+          ul
+            padding: 10px 30px
+            li
+              padding-bottom: 10px
+              list-style: disc inside
+        .center_form
+          text-align: center
+          float: left
+          &.start
+            margin: 20px 0 40px 153px
+          .bootstrap-twitter
+            margin-left: 60px
+            .curious
+              position: relative
+              float: left
+              margin-right: 30px
+              .btn_explore
+                float: left
+                width: 240px
+                background: #6BB544 url($images_path+'button_explore.png') 15px 6px no-repeat
+                border: solid 1px #578A3F
+                height: 49px
+                padding-top: 13px
+                text-transform: uppercase
+                color: white
+                text-shadow: 1px 1px #4C8132
+                font-family: "serif"
+                font-weight: bold
+                font-size: 15px
+                text-indent: 35px
+                +border-radius(15px)
+                &.start
+                  background: #6BB544 url($images_path+'icon_submitbacker.png') 10px 13px no-repeat
+                  padding-top: 16px
+                  text-indent: 29px
+                  height: 45px
+                  background-size: 38px
+              span
+                color: white
+                text-shadow: 1px 1px #4C8132
+                font-family: "serif"
+                font-style: italic
+                font-size: 14px
+                position: absolute
+                top: 32px
+                left: 42px
+            .send
+              position: relative
+              float: left
+              .btn_send
+                float: left
+                width: 240px
+                background: #F28E0B url($images_path+'button_send.png') 15px 11px no-repeat
+                border: solid 1px #C8760A
+                height: 49px
+                padding-top: 13px
+                text-transform: uppercase
+                color: white
+                text-shadow: 1px 1px #C8760A
+                font-family: "serif"
+                font-weight: bold
+                font-size: 15px
+                text-indent: 24px
+                +border-radius(15px)
+                &.start
+                  text-indent: 32px
+                  padding-top: 15px
+                  height: 46px
+                  background-position: 12px 13px
+                  background-size: 30px
+              span
+                color: white
+                text-shadow: 1px 1px #C8760A
+                font-family: "serif"
+                font-style: italic
+                font-size: 14px
+                position: absolute
+                top: 32px
+                left: 68px
+                &.start
+                  left: 30px
+        .tips
+          float: left
+          width: 100%
+          ul
+            li
+              &.gray
+                background: url($images_path+'bg_tips.png') left top repeat-x
+              ul
+                margin: 18px auto 0
+                li
+                  margin-left: 0px
+                  img
+                    float: left
+                    margin-right: 10px
+                    margin-top: 2px
+                    margin-bottom: 30px
+                  p
+                    font-family: Arial
+                    color: #666666
+                    line-height: 18px
+                    font-size: 12px
+                  strong
+                    font-family: Arial
+                    color: #666666
+                    font-size: 14px
+                    display: block
+                    line-height: 18px
+                    font-weight: bold
+                    margin-bottom: 10px
+                    margin-top: 20px
+                li + li
+                  margin-right: 0px
+        .guide
+          width: 100%
+          text-align: center
+          margin: 20px 0 40px 0
+          float: left
+          .guide_download
+            display: inline-block
+            height: 63px
+            background: #F7F7F7
+            border: solid 1px #EDEDED
+            color: #666666
+            font-family: "serif"
+            font-size: 13px
+            line-height: 18px
+            a
+              color: #666666
+              font-family: "serif"
+              font-size: 13px
+              text-decoration: none
+            img
+              float: left
+              margin-left: -10px
+              margin-top: -1px
+            p
+              margin-top: 13px
+              margin-left: 33px
+        .guide + .center_form
+          margin: 30px 0px 30px 155px

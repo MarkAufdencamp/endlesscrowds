@@ -1,0 +1,271 @@
+// Banner styles
+
+.mobile-splash-image
+  visibility: hidden
+.splash-banner
+  background-color: $bkg_dark
+  background-image: url($images_path + "EC_splash_banner.jpg")
+  background-position: left top
+  background-repeat: no-repeat
+  h2.caption
+    @extend .serif-title
+    margin-top: 25px
+    color: $txt_light
+    font-size: 2em
+  h3.sub-caption
+    @extend .serif-title
+    color: $txt_medium
+    font-size: 1.85em
+    margin-bottom: 10px
+  h4
+    @extend .serif-title
+    padding-top: 10px
+    color: $txt_accent
+    font-size: 1.75em
+    line-height: 1.35
+    // add some contrast against bacground image
+    background-color: rgba(0,0,0, .2)
+    +box-shadow(rgba(black, 0.4) 0 0 50px)
+  .buttons
+    margin-top: 15px
+    .button
+      width: 85%
+      margin-left: auto
+      margin-right: auto
+.support-banner
+  background-color: $bkg_light
+  padding-bottom: 30px
+  .header-icon
+    background-image: url($images_path + "EC_shield_icon.png")
+    width: 23px
+    height: 29px
+    display: block
+    margin: 0 auto
+  h2
+    @extend .serif-title
+    color: $txt_light_accent
+    font-size: 1.5em
+    text-align: center
+    border-bottom: 4px solid $border_light
+    padding-bottom: 8px
+    margin-bottom: 16px
+  h3
+    @extend .serif-title
+    margin: 0 auto
+    // align with image, don't
+    // fall under shield
+    font-size: 1.5em
+    max-width: 300px
+    padding-right: 10px
+  .military h3
+    color: $military
+  .fire h3
+    color: $fire
+  .first-responder h3
+    color: $responder
+  section.categories
+    .image
+      margin: 0 auto
+      position: relative
+      max-width: 300px
+      .military-icon, .fire-icon, .responder-icon
+        width: 55px
+        height: 55px
+        position: absolute
+        right: -10px
+        bottom: -20px
+    .description
+      max-width: 300px
+      margin: auto
+      p
+        color: $txt_medium
+        line-height: 1.2
+        padding-bottom: 20px
+        margin: 0 auto
+    .learn-more
+      @extend .serif-title
+      font-size: 1em
+      color: $fire
+      text-transform: uppercase
+      font-weight: 600
+      padding-right: 30px
+      background-image: url($images_path + "EC_arrow.png")
+      background-repeat: no-repeat
+      background-position: right
+
+.project-categories-banner
+  margin: 40px 0 20px 0
+  position: relative
+  .community, .entrepreneurial, .personal-creative
+    article
+      padding: 15px
+      background-color: $bkg_light
+  .title
+    text-transform: uppercase
+    //background-color: $bkg_light
+    padding: 0 0 10px 0
+    margin-bottom: 10px
+    h4
+      @extend .serif-title
+      font-weight: 600
+      font-size: .85em
+      text-align: center
+      color: $txt_medium
+      border-bottom: 2px solid $bkg_light
+  h2
+    @extend .serif-title
+    color: $txt_accent
+    font-size: 1.5em
+    text-align: center
+    padding-bottom: 0px
+    margin-bottom: 0px
+  h3
+    @extend .serif-title
+    font-weight: 600
+    font-size: 1em
+    text-align: center
+    color: $txt_dark
+  .line-break
+    background-color: $border_light
+    height: 4px
+    width: 100px
+    margin: 10px auto 0 auto
+  p
+    border-top: 1px solid $border_light
+    margin-top: 0
+    padding-top: 10px
+    color: $txt_medium
+    text-align: center
+    min-height: 80px
+    line-height: 1.2
+    min-height: 115px
+  a
+    display: block
+    margin: 20px auto
+    width: 60%
+    text-align: center
+    color: $txt_accent
+    border: 1px solid $border_light
+
+// Main Page Styles
+
+
+#index_main_content
+  background-color: white
+  padding: 20px 40px
+  .selected_projects, .expiring_projects, .recents_projects
+    padding-top: 20px
+    margin-bottom: 20px
+    border: 1px solid $border_light
+    .title
+      h2
+        background-image: url($images_path + "EC_shield_icon.png")
+        background-position: 2px, -4px
+        background-repeat: no-repeat
+        border-bottom: 4px solid $border_light
+        padding-left: 30px
+        margin-top: -13px
+        font-size: 1.75em
+        .accented
+          color: $fire
+  a.explore-more
+    font-size: 1em
+    color: $fire
+    padding-right: 30px
+    background-image: url($images_path + "EC_arrow.png")
+    background-repeat: no-repeat
+    background-position: right
+    text-align: right
+    float: right
+  .projects
+    border-top: 1px solid $border_light
+    padding-top: 15px
+    .bee-bop
+      background-color: pink
+      border: 1px solid black
+      height: 30px
+
+
+
+// 1. Media Changes for Mobile ONLY
+@media screen and (max-width: $media-mobile-max)
+
+// 2. Media Changes for Mobile AND Tablet
+@media screen and (max-width: $media-tablet-max)
+  .mobile-splash-image
+    visibility: visible
+    width: 100%
+    height: 320px
+    background-image: url($images_path + "EC_splash_banner.jpg")
+    background-position: left top
+    background-repeat: no-repeat
+  .splash-banner
+    background-image: none
+  .splash-banner
+    h2.caption
+      margin-top: 5px
+    h4
+      text-align: center
+    p.caption
+      font-size: 1.5em
+    p.sub-caption
+      margin-top: 25px
+      color: $txt_accent
+      font-size: 1em
+
+// Style changes for Desktop only
+
+// confined desktop
+@media screen and (min-width: $media-desktop-min)
+  .splash-banner
+    height: 435px
+    h2.caption
+      margin-top: 60px
+      line-height: 1.5
+    h4
+      margin-top: 35px
+      line-height: 1.15
+
+// expanded desktop
+@media screen and (min-width: $media-large-desktop-min)
+  .splash-banner
+    h2.caption
+      margin-top: 60px
+      line-height: 1.5
+    h4
+      margin-top: 35px
+      line-height: 1.35
+
+// DEPRECATE AND REMOVE WHEN SAFE:
+
+[data-namespace="null"][data-controller="projects"][data-action="index"]
+  #page_content
+    .partners
+      padding-top: 20px
+      padding-bottom: 10px
+      .title
+        margin-left: 10px
+      h2
+        background: url($images_path+"partners_icon26x26.png") left top no-repeat
+        text-indent: 35px
+        padding-bottom: 9px
+        margin-top: -5px
+        padding-top: 5px
+      .channels_list_widget
+        ul
+          width: 100%
+          li
+            width: 220px
+            margin-bottom: 20px
+            margin-right: 10px
+            margin-left: 10px
+            float: left
+            border: none
+            +transition(all, 0.5s)
+            &:hover
+              +border-radius(10px)
+              +box-shadow(rgba(black, 0.3) 0px 3px 10px)
+              img
+                +border-radius(10px)
+
+

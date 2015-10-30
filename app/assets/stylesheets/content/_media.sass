@@ -1,0 +1,62 @@
+// MOVE TO APPROPRIATE FILES
+
+// background image override on embeded project boxes (see miv/_embed)
+body#platform-embed
+  background: url($images_path+"EC_eagle.jpg") no-repeat center center fixed #fff
+
+
+// 1. Media Changes for Mobile ONLY
+@media screen and (max-width: $media-mobile-max)
+  .profiler-results
+    visibility: hidden !important
+    width: 0
+  [data-controller="static"] #page_content .container .static_default
+    ul.steps
+      background: none
+    .guide + .center_form
+      margin-left: 0
+    .center_form
+      .bootstrap-twitter
+        margin-left: 0
+        .curious,
+          margin: 5px 0 0 5px
+          float: none
+        .send
+          margin-left: 5px
+    .requirements
+      padding-top: 0
+    .more_questions .why-endless-crowds
+      float: left
+
+// 2. Media Changes for Mobile AND Tablet
+@media screen and (max-width: $media-tablet-max)
+
+// Media Changes for Tablet ONLY
+@media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max)
+  [data-controller="static"] #page_content .container .static_default
+    .requirements .rules-header
+      text-align: center
+    .requirements .rules-section
+      margin: 15px 40%
+    ul.steps
+      background: none
+      li, li.last
+        display: block
+        margin: 20px auto
+    .more_questions .why-endless-crowds
+      float: left
+      margin-bottom: 10px
+      margin-left: 35%
+    .center_form
+      width: 100%
+      .bootstrap-twitter
+        .curious
+          margin: 0 10% 0 5%
+
+// 4. Style changes for Desktop only
+
+// 4a. confined desktop
+@media screen and (min-width: $media-desktop-min)
+
+// 4a. expanded desktop
+@media screen and (min-width: $media-large-desktop-min)

@@ -1,0 +1,153 @@
+div.project
+  position: relative
+  float: left
+  //height: 415px
+  max-width: 275px
+  overflow: hidden
+  margin: 5px 0
+  .status_image
+    position: absolute
+    z-index: 100
+  .success_slice
+    width: 110px
+    height: 110px
+    overflow: hidden
+    position: absolute
+    &.pt
+      background: image-url("redesign/success_pt110x110.png") left top no-repeat
+  .info-box-wrapper
+    +border-radius(2px)
+    &:hover
+      +box-shadow(rgba(black, 0.3) 0px 0px 4px)
+    +transition(all, 0.3s)
+    background: $bkg_light_shade
+    border: 1px solid $border_medium
+    padding: 5px
+    height: 350px
+    .project_content
+      height: 140px
+      .author
+    .cover
+      position: relative
+      overflow: hidden
+      margin: 0 auto 8px auto
+      max-width: 220px
+      img
+        display: block
+        margin: auto
+      .project-category
+        text-transform: uppercase
+        position: absolute
+        background-color: rgba(0,0,0,.6)
+        margin-top: -24px
+        padding: 7px 0 1px 5px
+        color: white
+        @extend .serif-title
+        font-size: 11px
+        width: 100%
+    h4
+      font-size: 1.125em
+      color: $txt-dark
+      @extend .serif
+      font-weight: 700
+      overflow: hidden
+      padding: 0
+      padding-left: 15px
+      a
+        color: $txt-dark
+        text-decoration: none
+        &:hover
+          color: $txt_medium
+    .author, .where, .description
+      padding-left: 15px
+      font-size: 11px
+    .description
+      overflow: hidden
+      line-height: 120%
+      font-size: 13px
+      padding-top: 10px
+    .where
+      position: absolute
+      bottom: 80px
+
+  .progress-bar-wrapper
+    bottom: 0
+    background: $bkg_medium
+    border: 1px $border_medium solid
+    padding: 5px 5px 10px
+    margin-top: 3px
+    height: 75px
+    +border-radius(2px)
+    .status_bar
+      background-color: white
+      height: 20px
+      overflow: hidden
+      border: 1px $border_medium solid
+      +border-radius(9px)
+      .progress
+        background-color: $green
+        height: 18px
+        overflow: hidden
+    ul
+      padding-top: 10px
+      display: block
+      li
+        float: left
+        width: 33%
+        text-align: center
+        &:first-child
+          text-align: left
+        &:last-child
+          text-align: right
+        h6
+          @extend .serif-title
+          font-weight: bolder
+          font-size: 14px
+          color: black
+        p
+          text-transform: uppercase
+          color: $gray
+          font-family: Arial
+          font-size: 11px
+    .follow_project
+      clear: both
+      display: block
+      margin-top: 35px
+      padding: 4px 0 4px 0
+      text-align: center
+      @extend .serif-title
+      font-weight: 700
+      font-size: 1.0em
+      color: black
+      +opacity(0.5)
+      +border-radius(3px)
+      background: image-url("redesign/follow_project_start12x11.png") 4px 4px no-repeat $gray
+      text-transform: uppercase
+      &:hover
+        +box-shadow($grafiti 0 0 6px)
+
+.project_comment
+
+  h3
+    +opacity(0.8)
+    padding: 40px 0 20px
+  p
+    font-family:  Arial
+    font-size: 1.3em
+    color: black
+    line-height: 129%
+    padding-bottom: 20px
+    +opacity(0.7)
+    &.author
+      font-size: 1.1em
+      font-style:  italic
+      +opacity(0.5)
+
+
+.compost_project
+
+  padding-top: 30px
+  .project
+
+  .project_comment
+

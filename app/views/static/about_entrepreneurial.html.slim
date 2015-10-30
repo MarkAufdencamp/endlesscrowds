@@ -1,0 +1,23 @@
+= content_for :title, t('site.title.about')
+= content_for :description, t('site.description.about')
+.mobile-about-splash-image.entrepreneurial-banner
+.about-splash-banner.entrepreneurial-banner.row
+
+#about-page-content.row
+  = image_tag "catarse/EC_shield_icon.png", class: "header-icon"
+  .top.border-line
+  h2.small-centered.small-3.columns About Entrepreneurial Projects
+  section.large-8.large-centered.columns
+    .large-6.small-12.columns
+      p
+        | Being an entrepreneur is all about believing in yourself – believing in an idea. It could be a business, a revolutionary product, a brand new service-oriented software or website, or a new type of organization to accommodate a specific need. Yet, to really make such ideas become reality, it takes other people believing in you too.
+    .large-6.small-12.columns
+      p
+        | Many veterans, active military, and first responders don’t have access to a large paycheck or a lot of capital. For these servicemen and women who want to make their entrepreneurial endeavors a reality, it’s people like you who can help make it happen by supporting them both financially and on a community level.
+      p
+        | Here at Endless Crowds, we make it easy to believe in those who believe in themselves.
+
+  .clearfix
+  .border-decor.small-centered.small-3.columns
+  .border-line.large-8.large-centered.columns
+= render partial: 'bottom_nav'

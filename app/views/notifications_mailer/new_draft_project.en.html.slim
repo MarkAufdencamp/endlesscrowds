@@ -1,0 +1,25 @@
+- project = @notification.project
+| Hey!
+br
+br
+| Another project was created on #{Configuration[:company_name]}!
+== " by #{link_to project.user.name, user_url(project.user)}"
+br
+== "Email the administrator: #{mail_to project.user.email}"
+br
+br
+| Project Details Below:
+br
+br
+b Name:
+= " #{project.name}"
+br
+b Goal:
+= " #{project.display_goal}"
+br
+b List of related links:
+br
+= simple_format(project.more_links)
+br
+= link_to 'See more about the project', project_by_slug_url(permalink: project.permalink)
+

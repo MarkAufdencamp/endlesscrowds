@@ -1,0 +1,51 @@
+/* ================================================================== */
+/* Add configuration overrides here                                   */
+/* ================================================================== */
+
+$container-max-width: 940px
+
+
+
+
+
+/* ================================================================== */
+/* This file has a mobile-to-tablet, and tablet-to-desktop breakpoint */
+/* ================================================================== */
+
+// $media-mobile-max: 767px !default
+// $media-tablet-min: 768px !default
+// $media-tablet-max: 1024px !default
+// $media-desktop-min: 1025px !default
+
+// Change to Foundation:
+$media-mobile-max: 40em
+$media-tablet-min: 40.063em
+$media-tablet-max: 64em
+$media-desktop-min: 64.063em
+
+
+@import "unsemantic/partials/unsemantic-vars"
+@import "unsemantic/partials/unsemantic-ie-snap"
+
+@include unsemantic-grid-placeholders
+@include unsemantic-grid-base-tablet
+
+@media screen and (max-width: $media-mobile-max)
+  @include unsemantic-grid-placeholders(mobile)
+  @include unsemantic-grid-scoped(mobile)
+
+
+@media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max)
+  @include unsemantic-grid-placeholders(tablet)
+  @include unsemantic-grid-scoped(tablet)
+
+
+@media screen and (min-width: $media-desktop-min)
+  @include unsemantic-grid-placeholders(desktop)
+  @include unsemantic-grid-scoped(desktop)
+
+
+// For overriding the gutters for nested grid_containers
+.no-grid-padding
+  padding-left: 0px !important
+  padding-right: 0px !important

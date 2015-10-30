@@ -1,0 +1,25 @@
+= content_for :title, t('site.title.about')
+= content_for :description, t('site.description.about')
+.mobile-about-splash-image.community-banner
+.about-splash-banner.community-banner.row
+
+#about-page-content.row
+  = image_tag "catarse/EC_shield_icon.png", class: "header-icon"
+  .top.border-line
+  h2.small-centered.small-3.columns About Community Projects
+  section.large-8.large-centered.columns
+    .large-6.small-12.columns
+      p
+        | Endless Crowds is the fundraising platform for Military Veterans and First Responders (EMS, FireFighters, Police, etc) to raise money for entrepreneurial endeavors and community initiatives.
+      p
+        | For active duty / veteran military and first responders, their job is to serve the community. Servicemen and women risk their lives while saving civilian lives on a daily basis, however other aspects of community improvement need financial backing.
+    .large-6.small-12.columns
+      p
+        | From funding local outreach programs, to cleaning up areas of town, or creating food drives during the holidays, community projects require money in order to be successful.
+      p
+        | Now you can help local community organizers fund impactful projects that benefit entire regions.
+
+  .clearfix
+  .border-decor.small-centered.small-3.columns
+  .border-line.large-8.large-centered.columns
+= render partial: 'bottom_nav'

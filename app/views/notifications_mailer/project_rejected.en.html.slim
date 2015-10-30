@@ -1,0 +1,33 @@
+- user = @notification.user
+| Hello #{user.name},
+br
+br
+|Thank you for submitting your idea to #{Configuration[:company_name]}
+br
+br
+|#{Configuration[:company_name]} focuses on finite projects (beginning, middle and end well defined) and creative, ie, involving the creation / production of a product / service creative (a play, an exhibition, a documentary , a workshop, a demonstration, an intervention ...). Moreover, the final result should serve to reward not only people who are interested in having access to such products / services, but also the general public. We have a lot of love for projects that offer return to the community. We believe that everything we build is the result of our relationship with others, a social relationship, and therefore must be accessed freely by all!
+br
+br
+|Thus, we believe that you need to understand a little better how the crowdfunding model and format of projects on our platform look like. So, take a look at our #{link_to 'Complete Guide', "#{Configuration[:base_url]}/CompleteGuide.pdf"} and explore #{link_to 'other projects', explore_url} to get an idea of what we are looking for.
+br
+br
+|Once you hone your project, you can resend it by #{link_to 'this form', new_project_url}.
+br
+br
+|We understand that your project does not fit the way it is described in our current focus. You can understand a little more detail about how we think #{link_to 'here', guidelines_url}.
+br
+br
+|If after reading the links you believe that your project is in line according to our selection criteria you can send an email to #{mail_to Configuration[:email_projects]} with the subjectline "Review", explaining your point of view in a short paragraph.
+br
+br
+|Or, if you prefer, maybe other platforms can receive it. It pays to know this list of crowdfunding platforms. #{link_to 'Click here', 'https://docs.google.com/document/d/1neIcX_GIkIT_0CzLK3ewx3EAb20GEOHJaIM98W5Z2pk/edit'} to check them out.
+br
+br
+|Thank you for contacting us, and keep an eye on our news through #{link_to 'Facebook', Configuration[:facebook_url]}, #{link_to 'Twitter', "twitter.com/#{Configuration[:twitter_username]}" }, and our #{link_to 'blog', Configuration[:blog_url]}.  Of course, be sure to visit the projects that are live now: #{link_to 'EXPLORE', explore_url}
+br
+br
+br
+|Best regards and good luck,
+br
+br
+|The #{Configuration[:company_name]} team

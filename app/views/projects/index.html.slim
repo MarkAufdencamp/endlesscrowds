@@ -1,0 +1,43 @@
+= content_for :title, t('site.title.index')
+= content_for :description, t('site.description.index')
+= render partial: 'banner'
+
+#index_main_content.row
+  .selected_projects.large-8.large-centered.columns
+    .title.row
+      h2.large-5.small-12.columns
+          | Featured
+          span.accented
+            |  Projects
+      = link_to t('main.links.selected'), explore_path(anchor: :recommended), class: "explore-more large-5 small-12"
+    .projects.row
+      = render partial: 'project', locals: {project: @first_project, custom_class: 'large-4 small-6 columns' } if @first_project
+      = render partial: 'project', locals: {project: @second_project, custom_class: 'large-4 small-6 columns' } if @second_project
+      = render partial: 'project', locals: {project: @third_project, custom_class: 'large-4 small-6 columns' } if @third_project
+      = render partial: 'project', locals: {project: @fourth_project, custom_class: 'large-4 small-6 columns' } if @fourth_project
+
+  .expiring_projects.large-8.large-centered.columns
+    .title.row
+      .title.large-12.small-12.columns
+        h2.large-5.small-12.columns
+          | Expiring
+          span.accented
+            |  Projects
+        = link_to t('main.links.expiring'), explore_path(anchor: :expiring), class: "explore-more large-5 small-12"
+    .projects.row
+      - @expiring.each_with_index do |item,i|
+        == render 'project', project: item, custom_class: 'large-4 small-6 columns'
+
+  .recents_projects.large-8.large-centered.columns
+    .title.row
+      .title.large-12.small-12.columns
+        h2.large-5.small-12.columns
+          | Recent
+          span.accented
+            |  Projects
+        = link_to t('main.links.recents'), explore_path(anchor: :recent), class: "explore-more large-5 small-12"
+    .projects.row
+      - @recent.each_with_index do |item,i|
+        == render 'project', project: item, custom_class: 'large-4 small-6 columns'
+
+= render partial: 'banner_bottom'

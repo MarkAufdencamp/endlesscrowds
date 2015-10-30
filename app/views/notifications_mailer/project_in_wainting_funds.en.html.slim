@@ -1,0 +1,22 @@
+- project = @notification.project
+|Hello #{project.user.name},
+br
+|Your project's deadline on #{Configuration[:company_name]} is about to pass. As there are still some outstanding payments for your project, your project will await confirmation of these last minute contributions for the next roughly ~4 days. There are a few situations that may arise from this:
+br
+br
+|1 - <strong> If your project has already exceeded the goal:</strong> we will only count the project as successful if all payment confirmations are completed and will do the transfer for you after that period.
+| If your account has not been verified, our staff will contact you to accomplish this process.
+br
+br
+|2 - <strong>If your project has not yet reached the goal, but has outstanding payments that can make it happen </strong>: we expect (and hope) that these payments are confirmed and your project will achieve 100% . Since most of these projects end up being financed with such payments last minute, our team will contact you once they are.
+br
+br
+|Feel free to send questions and feedback to us at any time.
+br
+|To do so go to our #{link_to 'Support Center', 'http://endlesscrowds.zendesk.com/home'}
+br
+br
+|Best Wishes,
+br
+br
+|The #{Configuration[:company_name]} team

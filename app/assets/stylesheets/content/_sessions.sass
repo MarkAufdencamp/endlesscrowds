@@ -1,0 +1,111 @@
+[data-controller-name="registrations"],
+[data-controller="users"][data-action="set_email"],
+[data-controller="users"][data-action="update_email"],
+[data-controller="omniauth_callbacks"],
+[data-controller="passwords"][data-action="new"],
+[data-controller="passwords"][data-action="edit"]
+  .bootstrap-form
+    overflow: hidden
+    //width: 900px
+  #page_content
+    .container
+      .devise_content
+
+        .links
+          padding: 15px 0 20px
+          a
+            color: $blue
+            font-family: Arial
+            font-size: 13px
+            text-decoration: none
+            &:hover
+              color: $fire
+
+        form
+          ul
+            list-style: none
+          label
+            font-family: $font-family
+            font-size: 13px
+        .title
+
+
+          padding-bottom: 20px
+          h1
+            color: $gray
+            font-family: $font-family
+            font-size: 28px
+            padding: 5px 0
+          h2
+            color: rgba($gray, 0.7)
+            font-family: Arial
+            font-size: 18px
+[data-controller-name="registrations"],
+[data-controller="sessions"][data-namespace="devise"][data-action="new"]
+  .container
+    .form_login, .form_register, .login_with_social
+      padding-top: 40px !important
+      padding-bottom: 30px
+      &.actived
+        padding-top: 17px !important
+        .content_form
+          float: left
+          border: 3px $gray solid
+          padding: 20px 20px 0 20px
+          background: rgba($gray, 0.4)
+      h1
+        font-family: $font-family
+        font-weight: 700
+        font-size: 20px
+        padding-bottom: 5px
+        color: $gray
+      h3
+        font-family: $font-family
+        font-size: 15px
+        padding-bottom: 15px
+        color: $gray
+      .input.check
+        label
+          font-size: 11px !important
+      label
+        font-family: $font-family
+        font-size: 12px
+        width: 220px
+    .form_login
+
+      input[type="checkbox"]
+        float: left
+        margin-right: 5px
+      .content_form
+        padding: 0px 23px 0 23px
+        p.forgot_link
+          padding: 15px 0 0
+          a
+            color: $blue
+            font-family: Arial
+            font-size: 13px
+            text-decoration: none
+            &:hover
+              color: $fire
+    .form_register
+
+    .login_with_social
+
+      .content_form
+        padding-left: 20px
+      .another_social
+        a
+          text-decoration: none
+          font-weight: bold
+          &.first
+            margin-left: -10px
+          img
+            width: 55px
+            +transition(all, 0.3s)
+          img:hover, img:focus
+            +scale(1.2)
+        a.disabled
+          img
+            +opacity(0.6)
+          img:hover, img:focus, img:active
+            +scale(1)

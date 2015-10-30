@@ -1,0 +1,24 @@
+= content_for :title, t('site.title.about')
+= content_for :description, t('site.description.about')
+.mobile-about-splash-image.organizations-banner
+.about-splash-banner.organizations-banner.row
+
+#about-page-content.row
+  = image_tag "catarse/EC_shield_icon.png", class: "header-icon"
+  .top.border-line
+  h2.small-centered.small-3.columns Support Organizations
+  section.large-8.large-centered.columns
+    .large-6.small-12.columns
+      p
+        | We love to see money raised for military non-profits and organizations supporting soldiers, veterans and their families.
+      p
+        | We have experience working with organizations of all sizes, and understand the effort required to run large scale campaigns. Our fundraising platform is free and easy to use, saving your organization time and money. And unlike traditional non-profit fundraisers, which require long-term planning and team coordination, Endless Crowds can help you see your fundraising efforts pay off in minutes instead of months.
+    .large-6.small-12.columns
+      p
+        | Raise money with an Endless Crowds project or with our
+        = link_to " Affiliate Program", referrals_path
+        | . Let us help you leverage the network you already have to aid in your fundraising efforts!
+  .clearfix
+  .border-decor.small-centered.small-3.columns
+  .border-line.large-8.large-centered.columns
+= render partial: 'bottom_nav'

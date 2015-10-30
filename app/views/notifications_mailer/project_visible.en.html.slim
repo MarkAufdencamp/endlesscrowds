@@ -1,0 +1,63 @@
+- project = @notification.project
+|Hello, #{project.user.display_name}.
+br
+br
+|Your project just went live and is ready to start receiving donations and support!
+br
+br
+= link_to(project.name, project_by_slug_url(project.permalink))
+br
+br
+strong Here is some useful information:
+ol
+  li To promote your project , we have some tips #{link_to('here','https://docs.google.com/file/d/1O9QqU3-pGeGtMVxenCMdtX_L-CW9-2vGAdSxHWbeKO9plASscJ4goHjM7Iw_/edit')}. The document can be edited by anyone, so feel free to add new comments!
+  li
+    |To interact with your supporters, you have three tabs:
+    br
+    br
+    strong Supporters/Backers
+    br
+    | In the supporters tab you will have access to the emails of all your supporters, the value of their contribution and reward selected.
+    br
+    br
+    strong News
+    br
+    | Everything you publish in this tab will be sent directly to your sponsor/backers emails. Use this tool to communicate with them and make special shoutouts during key moments of the campaign. Be careful not to turn into a SPAMMER and fill your supporters' inbox however!
+    br
+    br
+    strong Comments
+    br
+    | Follow the comments, stay tuned to what your contributors are thinking about the project, and join the conversations. Communication is critical at all times to have a successful project!
+  li
+    |In addition, you can edit your project by following a few rules:
+    ul
+      li You can not change the amount to be collected
+      li You can not change the content and value of rewards that already has some support started.
+    |You can:
+    ul
+      li Change the video
+      li Edit the project description
+      li Create new rewards
+      li End rewards (limiting them)
+      li Change contents/value of rewards not yet supported
+      li Change the thumbnail and punchline of the project
+    |To find out all the details about editing live projects, click #{link_to 'here', 'https://docs.google.com/document/d/186yNtCvVb4Z0nwy63VusIhKFsiLApcV8zu2_RG_AM3M/edit'}.
+    br
+    br
+    strong IMPORTANT:
+    |To perform all these actions, you must be logged in as the project owner on #{Configuration[:company_name]}.
+  li
+    |Any questions regarding <strong>financial transactions</strong>, created during the project, or changing contribution values, check out our guide #{link_to 'here', 'https://docs.google.com/file/d/1O9QqU3-pGeGtMVxenCMdtX_L-CW9-2vGAdSxHWbeKO9plASscJ4goHjM7Iw_/edit'} and consult the articles in our #{ link_to 'Knowledgebase', 'https://endlesscrowds.zendesk.com/home'}.
+    |f the guide does not work, please go to #{link_to 'https://endlesscrowds.zendesk.com/home', 'https://endlesscrowds.zendesk.com/home'} and send your question there.
+  li
+    |To send promotional materials using our social media accounts, send a message to
+    = link_to 'https://endlesscrowds.zendesk.com/home', 'https://endlesscrowds.zendesk.com/home'
+    |. There you can discuss strategies with our team and receive suggestions on how to better your project. Use sparingly! Remember that the responsibility to lead the campaign and get support is still yours because your network is to become the main results of the campaign.
+br
+br
+|Many Thanks,
+br
+|#{Configuration[:company_name]}
+br
+br
+|Stay tuned to #{Configuration[:company_name]} on Facebook , Twitter , Instagram & Google +

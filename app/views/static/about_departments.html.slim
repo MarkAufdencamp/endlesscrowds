@@ -1,0 +1,38 @@
+= content_for :title, t('site.title.about')
+= content_for :description, t('site.description.about')
+.mobile-about-splash-image.departments-banner
+.about-splash-banner.departments-banner.row
+
+#about-page-content.row
+  = image_tag "catarse/EC_shield_icon.png", class: "header-icon"
+  .top.border-line
+  h2.small-centered.small-3.columns First Responder Departments
+  section.large-8.large-centered.columns
+    .large-6.small-12.columns
+      p
+        | Use the power of crowdfunding for your department based cause and let your community show their support for the local heroes.
+      p
+        | This includes projects for
+        ul
+          li
+           | Tools &amp; Equipment
+          li
+           | Training &amp; Education
+          li
+           | Memorials
+          li
+           | Union Causes
+          li
+           | Community outreach programs
+
+    .large-6.small-12.columns
+      p
+        | Raise money with an Endless Crowds project or with our
+        = link_to " Affiliate Program", referrals_path
+        | . Let us help you leverage the network you already have to aid in your fundraising efforts!
+
+
+  .clearfix
+  .border-decor.small-centered.small-3.columns
+  .border-line.large-8.large-centered.columns
+= render partial: 'bottom_nav'

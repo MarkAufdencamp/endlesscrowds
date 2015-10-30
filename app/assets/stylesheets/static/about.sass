@@ -1,0 +1,137 @@
+.mobile-about-splash-image
+  visibility: hidden
+.about-splash-banner
+  background-color: #5546A1
+  background-image: url($images_path + "EC_about_banner.jpg")
+  background-position: center top
+  background-repeat: no-repeat
+  height: 438px
+  h2.caption
+    @extend .serif-title
+    margin-top: 50px
+    color: $txt_light
+    font-size: 3em
+  .icons
+    margin: 25px 0 0 70%
+    .military-icon, .fire-icon, .responder-icon
+      width: 75px
+      height: 75px
+      margin-top: 25px
+.about-splash-banner.military-banner, .about-splash-banner.firefighter-banner, .about-splash-banner.first-responder-banner, .about-splash-banner.creative-banner, .about-splash-banner.entrepreneurial-banner, .about-splash-banner.community-banner
+
+.about-splash-banner.military-banner, .mobile-about-splash-image.military-banner
+  background-image: url($images_path + "EC_about_military.jpg")
+  background-color: #1F0C0D
+.about-splash-banner.firefighter-banner, .mobile-about-splash-image.firefighter-banner
+  background-image: url($images_path + "EC_about_firefighters.jpg")
+  background-color: #FEC284
+.about-splash-banner.first-responder-banner, .mobile-about-splash-image.first-responder-banner
+  background-image: url($images_path + "EC_about_first_responders.jpg")
+  background-color: #558ADD
+.about-splash-banner.creative-banner, .mobile-about-splash-image.creative-banner
+  background-image: url($images_path + "EC_about_creative.jpg")
+  background-color: #D0A981
+  background-position: right top
+.about-splash-banner.entrepreneurial-banner, .mobile-about-splash-image.entrepreneurial-banner
+  background-image: url($images_path + "EC_about_entrepreneurial.jpg")
+  background-color: #F1F4ED
+  background-position: left top
+.about-splash-banner.community-banner, .mobile-about-splash-image.community-banner
+  background-image: url($images_path + "EC_about_community.jpg")
+  background-color: #DBCD89
+.about-splash-banner.foundation-banner, .mobile-about-splash-image.foundation-banner
+  background-image: url($images_path + "EC_about_foundation.jpg")
+  background-color: #DBCD89
+
+.about-splash-banner.families-banner, .mobile-about-splash-image.families-banner
+  background-image: url($images_path + "EC_about_individuals_families.jpg")
+  background-position: right top
+  background-color: #1954A3
+
+.about-splash-banner.departments-banner, .mobile-about-splash-image.departments-banner
+  background-image: url($images_path + "EC_about_departments.jpg")
+  background-color: #212121
+
+.about-splash-banner.organizations-banner, .mobile-about-splash-image.organizations-banner
+  background-image: url($images_path + "EC_about_organizations.jpg")
+  background-color: #4F361E
+
+
+#about-page-content
+  background-color: $bkg_light
+  .border-decor
+    padding-top: 16px
+    border-bottom: 4px solid $border_light
+  .border-line
+    border-top: 1px solid $border_light
+  .top.border-line
+    width: 100%
+    height: 15px
+    margin-top: -20px
+    z-index: -1
+  .header-icon
+    width: 23px
+    height: 29px
+    display: block
+    margin: 0 auto
+  h2
+    @extend .serif-title
+    color: $txt_light_accent
+    font-size: 1.5em
+    text-align: center
+    border-bottom: 4px solid $border_light
+    padding-bottom: 8px
+    margin-bottom: 0
+  section
+    border-top: 1px solid $border_light
+    padding-top: 16px
+  h3
+    @extend .serif-title
+    color: $txt_light_accent
+    font-size: 1.5em
+    margin: 15px 0 5px 0
+  p
+    color: $txt_medium
+    padding: 10px 0
+  ul
+    list-style: disc outside none
+    padding: 0 0 0px 30px
+    color: $txt_medium
+
+// 1. Media Changes for Mobile ONLY
+@media screen and (max-width: $media-mobile-max)
+  .about-splash-banner
+    h2.caption
+      font-size: 1.5em
+
+
+// 2. Media Changes for Mobile AND Tablet
+@media screen and (max-width: $media-tablet-max)
+  .mobile-about-splash-image
+    visibility: visible
+    width: 100%
+    height: 438px
+    background-image: url($images_path + "EC_about_banner.jpg")
+    background-position: right top
+    background-repeat: no-repeat
+  .about-splash-banner
+    width: 100%
+    background-image: none
+    background-color: $bkg_dark
+    height: initial
+    h2.caption
+      margin-top: 0px
+    .icons
+      margin: 5px auto 10px auto
+      width: 225px
+  .about-splash-banner.military-banner, .about-splash-banner.firefighter-banner, .about-splash-banner.first-responder-banner,
+  .about-splash-banner.creative-banner, .about-splash-banner.entrepreneurial-banner, .about-splash-banner.community-banner
+    background-image: none
+  .mobile-about-splash-image.military-banner, .mobile-about-splash-image.firefighter-banner,
+  .mobile-about-splash-image.first-responder-banner, .mobile-about-splash-image.community-banner
+    background-position: center top
+  .mobile-about-splash-image.entrepreneurial-banner
+    background-position: -200px top
+  .mobile-about-splash-image.organizations-banner
+    background-position: 80% top
+

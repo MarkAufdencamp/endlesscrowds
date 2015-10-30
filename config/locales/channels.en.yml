@@ -1,0 +1,94 @@
+en:
+  channels_subscribers:
+    created: 'You are now following the channel'
+    deleted: 'You failed to follow the channel'
+  channels:
+    send_your_project: "Submit your project"
+    send_a_email: "Send an email"
+    follow: "Follow the channel"
+    following: "Following"
+    unfollow: "Unfollow"
+    subscribed: "%{count} users following the channel"
+    curator: 'Curator'
+    adm:
+      menu: "Moderate Channels"
+    projects:
+      send: "Send your project"
+      see_how_it_works: "See how it works and post your project"
+      how_it_works: "How it works"
+      progress_html: "<span>%{percent}%</span> funded"
+      time_remaining_html:
+        one: "<span>%{count} %{unit}</span> remain"
+        other: "<span>%{count} %{unit}</span> remaining"
+      pledged_html: "<span>%{value}</span> raised"
+      new:
+        title: "Submit your project to the channel"
+        subtitle: The time realize your dreams starts now! We're dying to know what you're up to ...
+        legend_html: "After completing the form below, your project will go into draft mode. There you can add rewards and share with your friends to improve your project.
+        <br/>
+        <br/>
+        The information filled below is not final, but remember that the more consistent you are in your project submission, the faster it will go live.
+        <br/>
+        <br/>
+        <strong>Important</strong>
+        <br/>
+        This channel selects projects according to their own
+        <a href=' https://docs.google.com/file/d/1O9QqU3-pGeGtMVxenCMdtX_L-CW9-2vGAdSxHWbeKO9plASscJ4goHjM7Iw_/edit' target='_blank'>selection criteria</a>,
+        which can cause your project to be refused by the curatorial team.
+        "
+        permalink_hint: 'Simplify the URL of your project. Your supporters will need to remember the URL to be able to show their friends'
+        permalink_important: 'Try not to use underlines, hyphens, etc'
+        important_html: "Remember the 8% rate charged by EndlessCrowds if your project is successful. Simply divide your final budget by 0.87."
+        about: "Describe how your project will use the money it is trying to raise"
+        how_much_you_need: "How much money do you want to raise?"
+        how_much_hint_html: "It is important to remember that most of the support for your project will come from people close to you (1 to 2 degrees of separation): <a href='%{href}' target='_blank'>Click here!</a> Because of this the value you want to raise through EndlessCrowds should take into account that at least 50% of the money raised will come within your network."
+        how_much_important: "Remember the 6% rate charged by EndlessCrowds if your project is successful. Simply divide your final budget by 0.87."
+        days: "In how many days?"
+        days_hint: "On average a project is live for 40 or so days"
+        days_important: "The maximum amount of days a project can be live is 60"
+        about_hint: "Tell us a little about your nspiration behind starting the project, its history, and what will be delivered in the end. Be succinct. Treat your readers with something that moves them and be very transparent about the expectation on the project. "
+        about_important: "Do not put a lot of text here! Link to outside sources if you can."
+        contact: "Leave your email to get in touch"
+        links: "Are there more links where your users can learn about your project?"
+        links_important: "This section will allow us to understand the history of your project."
+        links_hint: "Link to videos, articles, reports, blogs..."
+        category: "What is the category of this project?"
+        tags_hint: "Before submitting your project, explore and be inspired by other projects that have gone through the site"
+        tags_important: "Check out more projects related to their category by clicking <a href='%{href}' target='_blank'>here!</a>."
+        video: "Already have video? Put the url here!"
+        video_hint: "The video is the main part of the project. If you have not one, you do not need to make one, but start thinking about making one soon!"
+        video_important: "Your video must be hosted on VIMEO. Paste the link to us!"
+        more_links_important: "It is very important to the success of your project to use your social circles to spread the news about your project and engage your network."
+        first_backers_important: "These people are critical to the success of your project"
+        online_days_important: 'The maximum amount of days a project can be live is 60'
+        headline_important: 'Give us a brief description of the project, under 140 characters.'
+        name_important: "Do not exceed 50 characters"
+        social: "Social Circles"
+        facebook_hint: "http://facebook.com/__________"
+        twitter_hint: "http:// twitter.com/____________"
+        social_important: "It is very important to the success of your project to use your social circles to spread the news about your project and engage your network."
+        know_us_via: "How did you find out about EndlessCrowds?"
+        knowus_important: "You've arrived at the last question!"
+        how_works: "How do you plan to mobilize your supporters to raise the money neccesary for success?"
+        project_warning:
+          content_html: "Want to increase the chance of your project being selected? Be sure to read %{link}."
+          help_link: "our guide"
+        rewards: "How will you reward your supporters?"
+        rewards_hint: "Everyone loves limited editions, unique things, fun experiences. Spend some time thinking up creative rewards."
+        rewards_important: "Do not go overboard in rewards. Consider how you will deliver them and put it all in the budget."
+        submit: "Submit your project"
+        send_project: "I want to send my project"
+    how_it_works:
+      title: "How does %{channel} work?"
+    footer:
+      terms: "Terms of use"
+      privacy_policy: "Privacy Policy"
+      how_it_works: "How it works %{name}"
+      how_channels_work: "Learn about channels on EndlessCrowds"
+      contact: "Contact"
+    accessibility:
+      how_it_works: "Click here to learn how the Channel works and submit your project"
+      send_your_project: "Click here to submit your project"
+      link_to_twitter: "Link to Twitter channel"
+      link_to_facebook: "Link to Facebook channel"
+      link_to_website: "Link to external site"

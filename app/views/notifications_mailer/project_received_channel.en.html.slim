@@ -1,0 +1,43 @@
+- user = @notification.user
+- project = @notification.project
+|Hello, #{user.name}!
+br
+br
+|Thank you very much for trusting #{Configuration[:company_name]} with your project :)
+br
+br
+| First of all, it is important that every care will be given with the Trustees of the Canal via email: channels@endlesscrowds.com
+br
+br
+|Before proceeding, make sure you understand how the <a href="https://endlesscrowds.zendesk.com/home">“game rules”</a> work.
+br
+|To understand how the step-by-step selection of projects work, follow the four steps:
+br
+|1 - Make sure you filled out the form, received a page for your project and we contact you
+br
+br
+|2 - Our customer service team will reply to you within 4 working days. It's not necessarily a question of yes or no, we will exchange a few emails before the project goes live.
+br
+br
+|3 - Meanwhile (and during our conversations), you can change / improve all submitted information. Remember you are in a DRAFT environment, so this is the time to fill all extra information and relax while we get in contact with you.
+br
+br
+|4 - You tell us and authorize us to publish this project to become available to everyone and anyoneone
+br
+br
+|You have #{link_to 'draft link for your project', project_by_slug_url(subdomain: 'asas', project.permalink)} in your hands. Because of that, make sure you share it with some people in order to gather suggestions and improve your approach when the site is live.
+br
+br
+|Also get to know our #{link_to 'other projects', explore_url} and - if you like some - be sure to support them. This is the best way to show that you believe in the culture of crowdfunding in your local community and foster the ecosystem that is forming around #{Configuration[:company_name]}. And when you support another project on #{Configuration[:company_name]}, you will probably get that gift back - when your project is in the air.
+br
+br
+|One last important thing: It is required to fill in your registration information, so in the upper right corner of the site, click: My Account> My Profile> Preferences if you haven't already done so and fill out the information there.
+br
+br
+| If you have any questions, please contact us at: support@endlesscrowds.com
+br
+br
+|Warm Wishes,
+br
+br
+|The #{Configuration[:company_name]} team

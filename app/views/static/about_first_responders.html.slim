@@ -1,0 +1,27 @@
+= content_for :title, t('site.title.about')
+= content_for :description, t('site.description.about')
+.mobile-about-splash-image.first-responder-banner
+.about-splash-banner.first-responder-banner.row
+
+#about-page-content.row
+  = image_tag "catarse/EC_shield_icon.png", class: "header-icon"
+  .top.border-line
+  h2.small-centered.small-3.columns About Supporting First Responders
+  section.large-8.large-centered.columns
+    .large-6.small-12.columns
+      p
+        | Without police departments and EMTs (Emergency Medical Technicians) entire communities would crumble. They are the glue that holds our society together, and yet many of us don’t give them a second thought (until we have an emergency).
+      p
+        | Plain and simple, first responders are our heroes. Yet, despite their consistent sacrifice, they often lack the resources necessary to adequately protect our communities.
+    .large-6.small-12.columns
+      p
+        | With Endless Crowds, people just like you will be able to support first responders and volunteers, to not only ensure these departments have the necessary resources they need to do their job to the highest caliber, but to ensure individuals have the support and funding necessary to make their dreams come to fruition.
+      p
+        | Raise money with an Endless Crowds project or with our
+        = link_to " Affiliate Program", referrals_path
+        | . Let us help you leverage the network you already have to aid in your fundraising efforts!
+
+  .clearfix
+  .border-decor.small-centered.small-3.columns
+  .border-line.large-8.large-centered.columns
+= render partial: 'bottom_nav'

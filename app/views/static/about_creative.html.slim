@@ -1,0 +1,23 @@
+= content_for :title, t('site.title.about')
+= content_for :description, t('site.description.about')
+.mobile-about-splash-image.creative-banner
+.about-splash-banner.creative-banner.row
+
+#about-page-content.row
+  = image_tag "catarse/EC_shield_icon.png", class: "header-icon"
+  .top.border-line
+  h2.small-centered.small-3.columns About Creative Projects
+  section.large-8.large-centered.columns
+    .large-6.small-12.columns
+      p
+        | Creativity is what makes us human. Art, literature, music, innovative design, and stories – it is our enduring legacy as a species. When all is said and done, it’s what we leave behind.
+      p
+        | For many creatives, their job takes a priority over personal projects. This is especially true of those who literally lay their lives on the line for us every day, keep our cities safe, and save our lives when we’re in danger.
+    .large-6.small-12.columns
+      p
+        | Now, you can help these servicemen and women realize their creative projects by helping fund their ideas. By funding creative projects, you’re allowing the creator to devote themselves fully to a project, which is something they may not have been able to do previously because of financial constraints.
+
+  .clearfix
+  .border-decor.small-centered.small-3.columns
+  .border-line.large-8.large-centered.columns
+= render partial: 'bottom_nav'

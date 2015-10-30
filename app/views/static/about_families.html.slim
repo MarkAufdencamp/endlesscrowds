@@ -1,0 +1,25 @@
+= content_for :title, t('site.title.about')
+= content_for :description, t('site.description.about')
+.mobile-about-splash-image.families-banner
+.about-splash-banner.families-banner.row
+
+#about-page-content.row
+  = image_tag "catarse/EC_shield_icon.png", class: "header-icon"
+  .top.border-line
+  h2.small-centered.small-3.columns Individuals & Families
+  section.large-8.large-centered.columns
+    .large-6.small-12.columns
+      p
+        | Raise money for yourself, a friend or loved one during life's important moments. In as little as five minutes, our platform helps you build a personalized page that your friends, family, and strangers can support. And because we don’t require campaigns to reach their goal in order to keep funds - whatever you raise is yours!
+    .large-6.small-12.columns
+      p
+        | This includes things like medical expenses, startup businesses, education costs, volunteer programs, youth sports, funerals &amp; memorials - even animals &amp; pets.
+      p
+        | Raise money with an Endless Crowds project or with our
+        = link_to " Affiliate Program", referrals_path
+        | . Let us help you leverage the network you already have to aid in your fundraising efforts!
+
+  .clearfix
+  .border-decor.small-centered.small-3.columns
+  .border-line.large-8.large-centered.columns
+= render partial: 'bottom_nav'

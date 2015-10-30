@@ -1,0 +1,919 @@
+en:
+  current_update: 'Current changes made in '
+  'no': "No"
+  'yes': "Yes"
+  or: "or"
+  site:
+    meta_title:  "%{title} - %{company_name}"
+    title:
+      about: "Veterans Support from Endless Crowds"
+      index: "Money for Veteran Startup Through Crowdfunding"
+      entrepreneurial_projects: "Veteran Owned Business Crowdfunding"
+      guidelines: "Programs for Veteran Startup Projects"
+      guidelines_backers: "How to Help Veterans Start a Business"
+      guidelines_start: "Financial Assistance for Veteran Entrepreneurs"
+    description:
+      about: "Support our troops, veterans, police and firefighters through crowd funding. Endless Crowds is here to connect and support veteran projects."
+      index: "Endless Crowds is an online platform to bring veteran start ups and crowdfunding investors together."
+      entrepreneurial_projects: "Endless Crowds helps bring veterans who are starting businesses and crowd funding investors together."
+      guidelines: "Help a veteran or first responder start a business through crowd funding by Endless Crowds."
+      guidelines_backers: "Help our active military and veterans live their dream of owning their own business or launch a community project that gives back."
+      guidelines_start: "Veterans starting businesses and community initiatives turn to Endless Crowds to find those interested in investing in their project."
+    keywords: "Endless, crowds, crowdfunding, project, municipalities"
+  backer_report_to_project_owner:
+    reward_description: 'Reward description'
+    confirmed_at: 'Payment confirmed at'
+    value: 'Back value'
+    service_fee: 'EndlessCrowds fee'
+    user_name: 'Backer name'
+    user_email: 'User EndlessCrowds profile e-mail'
+    payer_email: 'Payment gateway user e-mail'
+    payment_method: 'Payment method'
+    address_street: 'Street'
+    address_complement: 'Complement'
+    address_number: 'Number'
+    address_neighbourhood: 'Neighborhood'
+    address_city: 'City'
+    address_state: 'State'
+    address_zip_code: 'Zip code'
+    anonymous: 'Anonymous'
+  edit_project: 'Edit this project'
+  days: 'days'
+  controllers:
+    rewards:
+      create:
+        notice: 'Reward successfully added!'
+        alert: 'Sorry, we could not add the reward.'
+  facebook_locale: 'en_US'
+  newsletter_ok_header: "You are subscribed to the newsletter!"
+  newsletter_ok_body: "Your email is now in our newsletter list, thank you for subscribing!"
+  newsletter_error_header: "Woops! There was an error."
+  newsletter_error_body: "Your email could not be added to our newsletter list, please try again later."
+  newsletter_subscribe: "subscribe"
+  views:
+    pagination:
+      next: next
+      last: last
+      truncate: "..."
+  statistics:
+    backers:
+      subtitle: backers
+    goal:
+      subtitle: "total of %{total}"
+  project_by: "Project By"
+  tell_about_this_back: "Tell the world about your support!"
+  share_my_backs: "See the projects that I support on EndlessCrowds!"
+  tell_about_this_project: "Tell the world about your project!"
+  share_my_projects: "See my created projects on EndlessCrowds!"
+  count_backed_projects: "backed %{total} projects"
+  footer:
+    titles:
+      info: "Useful Information"
+      opendata: "nice statistics"
+      social: "Stay in Touch"
+      newsletter: "Receive our Newsletter"
+    stats:
+      backers: Backers
+      backs: Backs
+      total_backed: Backed
+      users: Users
+      funded_projects: "Successful projects"
+      active_projects: "Projects live now"
+    links:
+      about: "Who we are"
+      how_works: "How It works"
+      faq: F.A.Q./Help
+      terms: "Terms of use"
+      policy: "Privacy Policy"
+      terms_link: 'https://endlesscrowds.zendesk.com/entries/25149782-Terms-of-use'
+      policy_link: 'https://endlesscrowds.zendesk.com/entries/25164138-Privacy-Policy'
+      contact: Contact
+      press: "Press"
+      affiliate_program: "Referrals"
+      partners: "Partners"
+      for_investors: "For Investors"
+    copyright: "Copyright &copy; 2013-%{year} Endless Crowds LLC | All Rights Reserved"
+  main:
+    links:
+      selected: "Explore more featured projects"
+      expiring: "Explore more expiring projects"
+      recents: "Explore more recent projects"
+  sidebar:
+    titles:
+      blog: "Blog"
+      facebook: "Facebook"
+      newsletter: "Newsletter"
+      faq: "Questions?"
+      schedule: "Calendar"
+    buttons:
+      newsletter: "Sign Up"
+  accept_terms_html: "I have read and accepted the %{link}."
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              not_found: "Your email is not registered, please verify the email address or create a new account"
+    attributes:
+      unsubscribe:
+        update: "Receive project updates"
+      backer:
+        value: Value
+      project:
+        category: Category
+        expires_at: Deadline
+        online_days: Days of the air campaign
+        headline: "Punch Line"
+        image_url: "Image URL"
+        name: Name
+        user_id: "User Id"
+        video_url: "Video URL"
+        permalink: 'Type your preferred project URL / project name'
+        more_links: 'Where can we find more about you and your project?'
+      reward:
+        description: Description
+        maximum_backers: "Maximum backers"
+        minimum_value: "Minimum value"
+      user:
+        address_city: City
+        address_complement: Complement
+        address_neighbourhood: Neighbourhood
+        address_number: Number
+        address_state: State
+        address_street: Street
+        address_zip_code: "Zip code"
+        bio: 'Mini Bio'
+        cpf: 'CPF / CNPJ '
+        cpf_hint: '(?)'
+        cpf_hint_title: 'Bill will be sent to this document'
+        current_password: "Current password"
+        email: Email
+        full_name: "Full name / Company Name"
+        id: 'ID'
+        moip_login: 'MoIP Login'
+        moip_login_hint: '(How to create an account)'
+        name: Nickname
+        password: Password
+        password_confirmation: "Password Confirmation"
+        phone_number: "Mobile phone number"
+        state_inscription: 'State Inscription'
+    models:
+      backer: Backer
+      category: Category
+      project: Project
+      reward: Reward
+  backer:
+    display_confirmed_at: "%{time_ago} ago"
+    reward_must_be_from_project: "must be from the same project"
+    should_not_back_if_maximum_backers_been_reached: "has reached its maximum backers"
+    value_must_be_at_least_rewards_value: "must be at least %{minimum_value} for the selected reward"
+    project_should_be_online: "You can not back a project that is not online"
+  backer_pledged_plural: People have funded
+  backer_pledged_singular: Person has funded
+  backer_plural: backers
+  backer_singular: backer
+  project_plural: projects
+  project_singular: project
+  click_here: "Click here"
+  click_term: 'terms'
+  clicking_here: "clicking here"
+  comment:
+    display_time: "%{time_ago} ago"
+  credits:
+    modal:
+      title: "Do you want to confirm your refund request?"
+      text: "Check out how our refund process works:"
+      link: "See how works the refund"
+      reject_btn: "I want to keep my credits"
+      accept_btn: "I want to request the refund"
+    index:
+      back_date: "Back date"
+      current_credits_html: "Your current balance is <span id=\"current_credits\">%{credits}</span> in credits."
+      important_html: "If you ask for a refund, the value of your payment will be deducted from your credits."
+      project: Project
+      refund_expration_date: "Refund deadline"
+      refunded: Refund request successfully done. Our team will contact you within two business days.
+      refunds_title: "Payments that can be refunded"
+      request_refund: "Request refund"
+      requested_refund: "Requested refund"
+      status: Status
+      title: "My credits"
+      value: Value
+    refund:
+      cannot_refund: "This payment cannot be refunded."
+      error: "There was an error while requesting your refund."
+      no_credits: "You don't have enough credits to request this refund."
+      refunded: "This payment has already been refunded."
+      requested_refund: "You have already requested a refund for this payment."
+    title: "My credits"
+  credits_mailer:
+    request_refund_from:
+      subject: "Refund request from project %{name}"
+      subject_html: "User %{name} requested refund for the back %{backer_key} to the project %{backer_project} in the amount of %{backer_value} made by %{backer_payment_service} gateway."
+      user_name: 'User name'
+      user_email: 'User email'
+      payer_email: 'Payment email'
+      payer_name: 'User name used on payment'
+      project: 'Project'
+      backer_key: 'Backer key'
+      payment_id: 'Payment ID'
+      backer_value: 'Backer value'
+      payment_method: 'Payment method'
+      payment_choice: 'Payment choice'
+      created_at: 'created at'
+  curated_pages:
+    index:
+      title: "Curated pages"
+    show:
+      backed: backed
+      reached: reached
+  devise:
+    confirmations:
+      confirmed: "Your account was successfully confirmed. You are now signed in."
+      send_instructions: "You will receive an email with instructions about how to confirm your account in a few minutes."
+      send_paranoid_instructions: "If your e-mail exists on our database, you will receive a password recovery link on your e-mail"
+    failure:
+      already_authenticated: "You are already signed in."
+      inactive: "Your account was not activated yet."
+      invalid: "Invalid email or password."
+      invalid_token: "Invalid authentication token."
+      locked: "Your account is locked."
+      timeout: "Your session expired, please sign in again to continue."
+      unauthenticated: "You need to sign up or sign in to continue."
+      unconfirmed: "You have to confirm your account before continuing."
+    links:
+      forgot_password: "Forgot your password?"
+      sign_in: "Sign in"
+      sign_up: "Sign up"
+    mailer:
+      confirmation_instructions:
+        subject: "Confirmation instructions"
+      reset_password_instructions:
+        subject: "Reset password instructions"
+        alt: "Reset password instructions"
+      unlock_instructions:
+        subject: "Unlock Instructions"
+    omniauth_callbacks:
+      failure: "Could not authorize you from %{kind} because \"%{reason}\"."
+      success: "Successfully authorized from %{kind} account."
+    passwords:
+      send_instructions: "You will receive an email with instructions about how to reset your password in a few minutes."
+      send_paranoid_instructions: "If your e-mail exists on our database, you will receive a password recovery link on your e-mail"
+      updated: "Your password was changed successfully. You are now signed in."
+      updated_not_active: "Your password was changed successfully."
+    registrations:
+      destroyed: "Your account was successfully cancelled. We hope to see you again soon."
+      inactive_signed_up: "You have signed up successfully. However, we could not sign you in because your account is %{reason}."
+      reasons:
+        inactive: inactive
+        locked: locked
+        unconfirmed: unconfirmed
+      signed_up: "Welcome! You have signed up successfully."
+      updated: "You updated your account successfully."
+    sessions:
+      new:
+        site_title: "Sign in"
+        submit: "Sign in"
+        title: "Sign in using your email"
+        login_title: Login
+        login_subtitle: "If you already have an account"
+        register_title: "Sign Up"
+        register_subtitle: "Use your e-mail account"
+        with_facebook: "Sign in with your Facebook account"
+        with_facebook_subtitle: "A quick way to access"
+        with_another_social: "Don't have a Facebook account?"
+        with_another_social_subtitle: "Sign in with another social network"
+      signed_in: "Signed in successfully."
+      signed_out: "Signed out successfully."
+    unlocks:
+      send_instructions: "You will receive an email with instructions about how to unlock your account in a few minutes."
+      send_paranoid_instructions: "If your account exists, you will receive an email with instructions about how to unlock it in a few minutes."
+      unlocked: "Your account was successfully unlocked. You are now signed in."
+  error: "Oops! There was an error. Please try again."
+  explore:
+    index:
+      categories: Categories
+      expiring: "Final countdown"
+      quick_explore: "Quick search"
+      recent: Recent
+      recommended: Recommended
+      subtitle: "Explore the projects, find the ones that touch you, and make them happen!"
+      successful: Successful
+      title: "Discover amazing projects"
+      section_title: "Explore"
+      section_subtitle: "Endless Crowds"
+    title: "Explore the projects"
+    project:
+      empty: "We didn't find any project with the text you searched."
+  formtastic:
+    hints:
+      backer:
+        credits: "You have <strong>%{credits}</strong> in credits and can back with up to this amount without needing to make a new payment."
+        value: "You chose the amount ;) starting with $1, any amount is great."
+      project:
+        about: "Tell us about what inspired you to come up with this project . Be objective end charming, present your readers with something that moves them while being very transparent over the expectations on your project!"
+        category: "Before you format your project explore other (successful) projects to inspire yourself!"
+        expires_at: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach the minimum in time."
+        first_backers: "To reach your financial goal it’s important to engage the people who are close to you and the project. So if you can list here who will be your first 20 backers that would be a great sign ;) "
+        goal: "Values in dollars ($)"
+        headline: "Summarize your project in 140 characters. This sentence will be the first contact people will have with your project, before even seeing the video. Be creative, clear and direct :)"
+        more_links: "Which chanels will be used to spread the word about your project? List here your facebook/twitter/blog/site/ and what ever more links you have to help you"
+        name: "Be as objective as you can. Leave explanations for the About section."
+        online_days: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach the minimum in time."
+        uploaded_image: "Upload a 512x400 image"
+        video_url: "Paste the URL from a <a href=\"http://vimeo.com\" target=\"_blank\">Vimeo</a> video. We recommend Vimeo because it looks better and doesn't have ads. This way, your project will look better too! <strong>Produce your video the best you can and make a video specifically for your campaign</strong>. If there is a single thing that differentiates the projects that reach the goal from the others is the video. Observe ;)"
+        video_url_edit: 'Paste here the URL of your Vimeo video.'
+      reward:
+        description: "Describe your reward in a way that arouses people's interest to back the project. Don't be shy!"
+        maximum_backers: "If your reward is limited, tell us the maximum backers."
+        minimum_value: "This is the minimum amount to choose this reward."
+    labels:
+      backer:
+        anonymous: "I want my back to be anonymous."
+        credits: "I want to use my credits on this back."
+        reward: "Select your reward"
+        value: "How much do you want to contribute with?"
+      comment:
+        comment: "Leave your comment about this project"
+      project:
+        about: "Tell us about your project. How will you spend the money you want to raise?"
+        category: 'Category'
+        expires_at: "What's the deadline to reach your goal?"
+        first_backers: "List your first backers *"
+        goal: "How much do you intend to raise? (use only numbers)"
+        headline: "Punch Line"
+        more_links: "List project related links *"
+        name: "Project's Name"
+        online_days: 'How Many Campaign Days?'
+        uploaded_image: "Project thumbnail"
+        video_url: Video
+      reward:
+        maximum_backers: "Maximum backers (optional)"
+    optional: " (optional)"
+  found_plural: Found
+  found_singular: Found
+  here: here
+  i_backed: "I backed the project %{name} on @endlesscrowds"
+  i_just_backed: "I just backed the project %{name} on @endlesscrowds"
+  layouts:
+    login:
+      login_with_facebook: "sign in with your facebook account"
+      remember_me: "Remember me and keep me connected."
+    header:
+      blog: blog
+      help: help
+      faq: FAQ
+      signup: "Join Now"
+      signin: Login
+      explore: explore
+      submit_project: "Create Project"
+      profile: "My Profile"
+      account: "My Account"
+    user:
+      logout: Logout
+      my_credits: "My credit"
+  not_informed: "not informed"
+  notify_locale: "We identified your language by your browser. If you prefer another one, click on one of the flags on the right."
+  on_the_spot:
+    cancel: Cancel
+    ok: OK
+    tooltip: "Click to edit..."
+  passwords:
+    edit:
+      label_new_password: "New password"
+      submit: "Change password"
+      title: "Reset password"
+      site_title: "Change password"
+      subtitle: "You requested to reset your password. Fill your new password below and click \"Change Password\". If you did not request this password reset, just skip this page and your password will remain the same."
+    email:
+      content_html: " <p>Someone has requested a link to change your password, and you can do this through the link below.</p><p>%{link}</p><p>If you didn't request this, please ignore this email.</p><p>Your password won't change until you access the link above and create a new one.</p> "
+      title: "Reset password instructions."
+    new:
+      submit: "Send instructions to reset my password"
+      title: "Forgot password?"
+      site_title: "Recover password"
+  project:
+    start:
+      email_subject: "Your project has been received by EndlessCrowds' team"
+      email_text: "Thanks for trusting your project to EndlessCrowds :)<br><br>We know that you expect a quick reply but we may take up to 4 days to respond (We are a small team). Note that the reply can come sooner, so pay atention to your inbox.<br><br>Meanwhile, check out the other projects that are live on EndlessCrowds(<a href='%{explore_link}' style='color: #E75297 !important;'>%{explore_link}</a>) and - if you like any of them - back them! This is the way to show support for your local community and to feed the ecosystem that keeps growing around EndlessCrowds.<br><br>Stay tuned for updates in <a href='%{facebook}' style='color: #E75297 !important;'>Facebook</a> and get some deeper knowledge about EndlessCrowds reading the posts in our <a href='%{blog}' style='color: #E75297 !important;'>blog</a>.<br><br>If you have any questions or comments, send an email to: %{email}"
+      notification_text: "Your project has been received by EndlessCrowds' team"
+    finish:
+      successful:
+        email_subject: "Hooray! The project %{project_name} was successful on EndlessCrowds!"
+        email_text: "The project %{project_link}, that you have backed, was successfully funded!<br><br>The project has %{project_total_backers} wonderful backers (including you), raised %{project_pleged} and reached %{project_process}% of its goal<br><br>Note: EndlessCrowds' team takes 3 days to send to the project creator the list with all information on the backers. Soon, the project creator should get in contact with you to thank you and talk about the rewards delivery.<br><br>In the mean time, why don't you share with all your friends this sucess?<br><br><div style='text-align:center;'>%{facebook_button}%{twitter_button}</div><br><br>If you want to get in touch with %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any questions or comments about EndlessCrowds, acess our FAQ: <a href='https://endlesscrowds.zendesk.com/home' style='color: #008800';>https://endlesscrowds.zendesk.com/home</a> or send an email to <a href='mail_to:info@endlesscrowds.com' style='color: #008800;'>info@endlesscrowds.com</a><br>"
+        facebook_text: "Hooray! The project '%{name}', which I backed, was successful on EndlessCrowds!"
+        notification_text: "Hooray! The project %{link} that you backed was successful! Spread the word!"
+        reward_notification_text: "Soon, %{link} will contact you to deliver your reward. Enjoy!"
+        twitter_text: "Hooray! The project '%{name}', which I backed, was successful on @endlesscrowds! %{short_url}"
+      unsuccessful:
+        email_subject: "The project %{project_name} wasn't funded on EndlessCrowds."
+        email_text: 'Unfortunately the project %{project_link}, that you have backed, did not reached its goal and was not funded on EndlessCrowds.<br><br>You can check out others %{project_category} projects in %{explore_category_link}. Remember that you signed up in EndlessCrowds using %{user_provider}. If you have any issues, do not hesitate to send an email to finances@endlesscrowds.com.<br><br>If, for any reason, you want to contact %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any other questions or comments, acess our FAQ or send an email to <a href="mail_to:info@endlesscrowds.com" style="color: #008800;">info@endlesscrowds.com</a>.<br>'
+        notification_text: "You received %{value} in credits to back other projects. If you prefer, you can request a refund %{link}."
+        unsuccessful_text: "The project %{link} that you backed wasn't funded. Maybe next time!"
+    video_regex_validation: "only Vimeo URLs are allowed"
+    display_status:
+      expired: expired
+      rejected: "rejected"
+      failed: "not funded"
+      successful: funded
+      waiting_confirmation: waiting
+      waiting_funds: waiting
+      not_reached_goal: waiting
+  projects:
+    box:
+      by: by
+    admin_fields:
+      title: "Admin fields"
+    back_project:
+      display_status:
+        reached_goal: "This project will be successful and funded on %{date}"
+        not_reached_goal: "This project will only be funded if at least %{goal} is pledged by %{date}"
+        failed: "This project didn't reach the goal of %{goal} by %{date} and wasn't funded"
+        rejected: "Este projeto foi rejeitado"
+        successful: "This project was successful and was funded on %{date}"
+        waiting_funds: "Waiting confirmation from payments to know if this project will be funded."
+        draft: "This project is in draft mode and is not open to backers yet."
+      reached_of: "Reached of"
+      submit: "Fund this project"
+    backer:
+      anonymous_backer: "Anonymous backer"
+      anonymous_description: "Opted to remain incognito"
+      no_reward: "This backer has not picked a reward"
+    backers:
+      review:
+        error: "There was an error while registering your back. Please try again."
+      show:
+        error: "You can only access this page after backing a project."
+        moip_message: "Your transaction is “Authorized” and you Moip code is “%{code}″.<br>If you have any questions about this transaction, contact Moip directly."
+        header_subtitle: "This project could not have gotten this far without you. Welcome to the team!"
+        header_title: "Thank you!"
+        text_subtitle: "Tell everyone what you just did"
+        recommended_projects: "You may like these other projects:"
+        text_title_html: "You are now part of the group that does everything to make %{link} happen."
+        title: "Thank you"
+      checkout:
+        no_credits: "You don't have enough credits to back this project."
+        success: "You successfully backed the project!"
+      new:
+        cannot_back: "It's not possible to back this project right now. Please check back later."
+        header:
+          subtitle: "You're just a few steps away from making a difference and becoming a part of this project."
+          title: "Oohh yeah!"
+        no_reward: "Thanks. I just want to help the project."
+        submit: "Review and proceed to checkout"
+        title: "Back %{name}"
+      create:
+        brazil_address_title: 'Fill when you back is in Brazil'
+        live_in_brazil: "If you live in Brazil, please check this box"
+        credits_notice_html: "The project will be backed with credits in your account. After the confirmation, you will have <strong>%{credits}</strong> in credits to back other projects."
+        error: "There was an error while attempting to back the project. Please try again."
+        international:
+          description: "You can use PayPal to make international payments"
+          important_html: "<p>The use of PayPal is designated mostly for international payments, because you'll have only 60 days to receive an eventual refund without paying any fee.</p><p>If you can make the original payment through MoIP, we recommend that you do it.</p><p>If that's not possible, don't worry: you'll always be able to receive your money back. If your refund is made more than 60 days after your payment, you'll have to pay PayPal's fee, which is 5.4% + $0.60 per transaction.</p>"
+          submit: "Proceed to PayPal's checkout"
+          title: "Want to make an international payment?"
+        review_with_reward_html: "You will back with <strong>%{value}</strong> and receive the following reward:"
+        review_without_reward_html: "You will back with <strong>%{value}</strong> but you don't want any reward."
+        submit:
+          credits: "Confirm backing with credits"
+          moip: "Proceed to MoIP's checkout"
+        subtitle: "This is the last step needed to back this project."
+        title: "Fill in and review your data"
+        choose_payment: "How do you want to pay?"
+        choose_payment_subtitle: "Select below a payment method"
+        choose_credit_card: "PayPal"
+        choose_boleto: "Payments from Brazil"
+        cpf: "To continue, please:"
+        payment_card: "Payment Card"
+        owner_card: "Cardholder name"
+        number_card: "Card number"
+        payment_boleto: "Pay with Debit Card"
+        select_boleto: "To proceed, please select:"
+        payment_account: ""
+        select_account: "You will be redirected to your bank accont"
+        you_are_about_html: "You are about to become part of the group that does everything to make %{link} happen."
+        pay_with: "Pay With"
+    create:
+      success: "Your project was successfully created! We'll be in contact with you soon."
+    form:
+      permalink_hint: 'Simplify the URL of your project. Your supporters will need to remember the URL to share your project.'
+      add_reward: "Add reward"
+      important_html: "Please notice that EndlessCrowds will charge 6% if your project is successful. Take this into account when budgeting money for your project"
+      project_warning:
+        content_html: "Want to have your project selected? Don't forget to read %{link}."
+        help_link: "our guide"
+      rewards_description: "We believe that the best way to inspire people to back a project is offering excellent – and creative! – rewards. Everybody loves limited editions, unique things and joyfull experiences (parties, candies, balloon traveling!). Spend some time devising creative rewards and people will be interested."
+      rewards_title: Rewards
+      submit: "Submit project"
+    index_header:
+      subtitle: "Fund projects collaboratively and become part of something bigger. Promote a collective catharsis! You're the missing part in this story."
+      subtitle_html: "Fund projects collaboratively and become part of something bigger.<br/>Promote a collective catharsis! You're the missing part in this story."
+      title: "Make the projects you believe in happen"
+    recommended_header:
+      suggest_for_you: "suggested for you"
+      highlight_project: "featured project"
+      guidelines: "How it Works"
+      guidelines_subtitle: "Getting to know EndlessCrowds"
+    pending:
+      can_finish: "Can finish?"
+      finished: Finished?
+      home_page: "Home page?"
+      id: Id
+      name: Name
+      no_projects: "No projects found."
+      order: Order
+      project: Project
+      slug: Slug
+      recommended: Recommended?
+      rejected: Rejected?
+      submit: Search
+      title: "Project management"
+      user: User
+      visible: Visible?
+    pending_backers:
+      anonymous: Anonymous?
+      confirmed: Confirmed?
+      credits: "Used credits?"
+      id: Id
+      key: Key
+      no_backers: "No backers found."
+      project: Project
+      refunded: Refunded?
+      requested_refund: "Requested refund?"
+      reward: Reward
+      submit: Search
+      title: "Backers management"
+      total_backed: backed
+      total_backers: backers
+      total_backs: backs
+      total_users: users
+      user: User
+      value: Value
+    project:
+      backed: backed
+      reached: reached
+    project_backers:
+      empty: "Nobody has backed this project so far. How about being the first one?"
+    project_header:
+      subtitle_html: "A project by %{link}"
+      without_city: "A project in %{category_name}, by %{author}"
+      with_city: "A project in %{category_name}, in %{city}, by %{author}"
+    project_updates:
+      empty: "This project didn't have updates yet."
+      submit: "Send update"
+      comment: "Update text"
+      title: "Title of the update"
+      destroy: "Remove update"
+      destroy_confirmation: "Do you want to remove the update?"
+    rewards:
+      reward_title: "For %{minimum} or more"
+      backs_to_confirm:
+        one:  "1 backer in time to confirm."
+        other: "%{count} backers in time to confirm."
+      title: "Back and receive..."
+    send_mail:
+      success: "Your project was successfully sent! We'll be in contact with you soon. Thanks a lot!"
+    show:
+      rejected: "This project does not fit our <a href='https://docs.google.com/file/d/1O9QqU3-pGeGtMVxenCMdtX_L-CW9-2vGAdSxHWbeKO9plASscJ4goHjM7Iw_/edit' target='_blank'>selection criteria.</a>"
+      waiting: "This project is waiting for approval. We'll let you know soon if it will go live on EndlessCrowds"
+      waiting_owner: "To edit the project info, click on 'Edit project' tab. You can edit your rewards in the reward column."
+      about_title: "About this <span class ='blue bold'>Project</span>"
+      no_rewards_warning_title: 'Create your rewards here'
+      no_rewards_warning: "Don't go nuts! Think about how you're going to deliver your rewards and include those costs in your budget. People are putting their trust in you, don't betray that confidence!"
+      reports:
+        no_backs: "This project don't have any back yet."
+        link_reports: 'Download report of '
+        all_backers: 'all backers'
+        all_backers_without_reward: "all backers that haven't selected any reward"
+        link_reward: 'Download the report of backers that selected the reward'
+      menu:
+        about: About
+        backers: Backers
+        comments: Comments
+        updates: Updates
+        edit: Edit
+        reports: Reports
+        add_reward: 'Add Rewards'
+      share:
+        embed: embed
+        embed_title: "Embed this project on your site"
+        link: Link
+        link_title: "Share the link"
+        take_a_look: "Check out the project"
+        title: "Be part of it and share this project"
+    new:
+      about: "Describe your project and how much do you need"
+      about_hint: "Tell us a little about what you want to do, how much you need and what for. Be brief and punctual, but don't forget to give the readers something that moves them. After all, it's your creation and they need to see your passion taking place!"
+      about_important: "Don't make it too long! Give links so people can know more about your work"
+      blog: "Have a blog about the project?"
+      category: "Project category"
+      contact: "Leave us your email address so we can contact you"
+      days: "Em quantos dias?"
+      days_hint: "Em média os projetos ficam no ar por 40 dias."
+      days_important: "O prazo máximo para deixar o projeto no ar é de 60 dias."
+      facebook: "Have a facebook account?"
+      facebook_hint: "http://facebook.com/__________"
+      first_backers_important: "These people are fundamental to the success of your project."
+      headline_important: "The summary of your project, in 140 characteres or less."
+      how_much_hint_html: "It is important to remember that much of the support will come from people close to you (1st and 2nd level of relationship): <a href='%{href}' target='_blank'> Click here </a> Plan to raise at least 50% of the value within your network of contacts."
+      how_much_important: "You will be charged an additional 6% by EndlessCrowds"
+      how_much_you_need: "How much do you want to raise?"
+      how_works: "How do you intend to mobilize backers to raise the money needed?"
+      important_html: 'Keep in mind the 6% fee charged by EndlessCrowds in case you reach your financial goal.'
+      introduction_html: "Fill out the form as completely as you can"
+      know_us_via: "How did you find out about EndlessCrowds?"
+      knowus_important: ""
+      legend_html: "After filling in the form below, you will be sent to your project page in 'Draft mode'. In 'Draft Mode' you will add the rewards for your backers, and can share the page with your friends to collect feedback and sharpen your project even more.<br><br>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go live.<br><br><b>Important:</b> <i>EndlessCrowds is curated platform, which means that the founders of this site will evaluate the focus, the feasibility and consistency of your project during the Draft phase. If we believe that your project does not comply with our <a href='https://docs.google.com/file/d/1O9QqU3-pGeGtMVxenCMdtX_L-CW9-2vGAdSxHWbeKO9plASscJ4goHjM7Iw_/edit' target='_blank' >selection criteria</a>, it may be refused.</i>"
+      links: "Where can we find more information about you and your project?"
+      links_hint: "Leave us as many links as you have, so we can get to know your work and your project better. It doesn't have to be anything formal or fancy, just a few useful links."
+      more_links_important: "It's very important to use social media to spread the word about your project and engage your network to make it a success."
+      links_important: ""
+      name_important: "Do not exceed 50 characters"
+      online_days_important: "60 days is the maximum"
+      permalink_hint: 'Go simple. Your backers should be able to remember the URL to your project'
+      permalink_important: 'Try not to use underline, hyphens etc.'
+      rewards: "What rewards do you want to offer?"
+      rewards_hint: "We believe that the best way to inspire people to back a project is offering excelent – and creative! – rewards. Everybody loves limited editions, unique things and joyfull experiences (parties, candies, balloon traveling!). Spend some time devising creative rewards and people will be interested."
+      send_project: "I want to submit my project."
+      submit: "Submit the project"
+      subtitle: "It's time to make your dream happen!"
+      subtitle: "The time to make it happen is now! We really want to know what you're up to..."
+      tags_important: "Check out other projects in your category  <a href='%{href}' target='_blank'>here</a>!"
+      title: "Submit your project"
+      title: "Submit your project"
+      twitter: "Have a twitter account?"
+      video: "Does your project already have a video?"
+      video_hint: "A Vimeo link"
+      video_important: "The video must be hosted by Vimeo. Paste the URL here!"
+      uploaded_image_important: "Must be a valid image file, 512 x 400 pixels"
+      project_warning:
+        content_html: "Want to have your project selected? Don't forget to read %{link}."
+        help_link: "our guide"
+    twitter:
+      take_a_look: "Check out the project %{name} on EndlessCrowds"
+    video_embed:
+      a_project_by_html: "A project by %{user_link} on %{root_link}"
+  projects_mailer:
+    start_project_email:
+      subject: "Project sent by %{name}"
+      subject_html: "Project sent by %{link}"
+  registrations:
+    new:
+      site_title: "Sign up"
+      submit: "Sign Up"
+      title: "Sign up using you email"
+  remaining_plural: left
+  remaining_singular: left
+  remove: remove
+  require_admin: "You must be admin to perform this action."
+  require_login: "You must be logged in to perform this action."
+  require_permission: "You don't have permission to perform this action."
+  reward:
+    display_remaining: "%{remaining} of %{maximum} available"
+    dont_want: "I don't want a reward"
+    limited: Limited
+    sold_out: "Sold out"
+  sessions:
+    auth:
+      success: "Successfully logged in. Welcome, %{name}!"
+    destroy:
+      success: "Successfully logged out. See you!"
+    failure:
+      error: "There was an error while loggin in. Please try again."
+  static:
+    guidelines_backers:
+      title: "I want to back a project!"
+      subtitle: "Understand step by step how to back a project on EndlessCrowds."
+      introduction: "EndlessCrowds is an excellent way to engage in a cause you believe in"
+      legend_html: "We believe that being part of something you’re passionate about just makes you feel good"
+      title_one: "Explore the Project"
+      step_one: "The first step is to understand the project. Watch the video, read the description, browse the links. If you decide this project deserves action, take the next step!"
+      title_two: "Determine your level of support"
+      step_two: "One important consideration is to place a value society derives from military, fire and police servicemen and women."
+      title_three: "Finalize your backing"
+      step_three: "Fill in your information and review it! Then, decide what form of payment best meets your needs."
+      title_four: "Spread the word!"
+      step_four: "Now you have a vested interest in the project. Spread the word on your networks and stay tuned to the updates."
+      title_requirements: "Remember: in EndlessCrowds it’s “all for a cause”"
+      sucessfull_title: "If the project meet or exceed its financial target ..."
+      sucessfull: "The project is considered successful! The creator gets the money and contacts all supporters."
+      not_sucess_title: "If the project is not funded, which charity receives the funds?"
+      not_sucess: "The MFP support charity will be chosen by the project creator."
+      title_not_funded: "If the project does not achieve the goal, how do I use my credits?"
+      not_funded: "You will receive credits on EndlessCrowds. The moment you choose to back another project, on the screen to select the reward, there will have a field to use your credits."
+      more_questions: "I'm ready to support a project, is there anything else I need to know?"
+      title_backer: "How do I know that my support was successful?"
+      backer: "You will receive a confirmation email. Afterwards, stay tuned on the BACKERS tab at the page of the project you backed."
+      title_rewards: "If the project is funded, how do I get my rewards?"
+      rewards: "It is the duty of the project creator to contact you and arrange how to deliver the chosen reward. If you do not hear from them, you need to send an email to him/her to claim it! If, after contacting them, you still get no answer... Contact EndlessCrowds support and we will get in contact with them ourselves."
+      title_credits: "If the project does not achieve the goal, how do I use my credits?"
+      credits: "You will receive credits on EndlessCrowds. The moment you choose to back another project, on the screen to select the reward, there will have a field to use your credits."
+      title_money: "What if I don't want to use the credits?"
+      money: "No problem! You just need to go to your profile (My credits) and request a chargeback. If you paid with debit or check, you’ll need to open an account at MOIP. If you used a credit card the value will be back on your next bill."
+      other_backers: "Can I help in other ways?"
+      intro: "Get to know different ways to help projects you believe in"
+      other_one: "Bring two other friends to back with the same amount you did"
+      other_two: "Spread the word to every one. Tell them how great is the project you backed on EndlessCrowds."
+      other_three: "Do you have a friend who’s a Journalist/Reporter? Try to have him/her to post something about it on his/her blog."
+      other_four: "Make a backing video to broadcast your belief in the project."
+      other_five: "Send an e-mail to the project creator asking how you can help even more."
+      submit: "VERY COOL!"
+      send_project: "I want to submit my project "
+      explore_curious: "I’M ON BOARD!"
+      explore_projects: "I want to back a project"
+    guidelines:
+      title: "How it works"
+      subtitle: "Get to know EndlessCrowds better."
+      submit: "SUBMITTING A PROJECT"
+      send_project: "Understand how to submit your project"
+      explore_curious: "BACKING A PROJECT"
+      explore_projects: "Understand how to back a project"
+    about:
+      title: "Who Are We?"
+      subtitle: "Meet the lovely gang that makes this whole thing happen"
+      introduction: "Who are they? What do they feed of? How are they networked? You’ll see all of it now on “Who are we?”."
+      name_one: "Lorum Ipsum"
+      title_one: "Title Ipsum"
+      text_one: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      name_two: "Lorum Ipsum"
+      title_two: "Title Ipsum"
+      text_two: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      name_three: "Lorum Ipsum"
+      title_three: "Title Ipsum"
+      text_three: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      name_four: "Lorum Ipsum"
+      title_four: "Title Ipsum"
+      text_four: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      name_five: "Lorum Ipsum"
+      title_five: "Title Ipsum"
+      text_five: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      name_six: "Lorum Ipsum"
+      title_six: "Title Ipsum"
+      text_six: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      name_seven: "Lorum Ipsum"
+      title_seven: "Title Ipsum"
+      text_seven: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      name_eight: "Lorum Ipsum"
+      title_eight: "Title Ipsum"
+      text_eight: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      name_nine: "Lorum Ipsum"
+      title_nine: "Title Ipsum"
+      text_nine: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    faq:
+      title: "Frequently asked questions"
+    guidelines_start:
+      accept: "I have read and understand how EndlessCrowds works."
+      explore_curious: "Just looking around!"
+      explore_projects: "I want to explore the projects."
+      submit: "Next step!"
+      send_project: "I want to submit my project."
+      subtitle: "Understand, step-by-step, how to finance your project through EndlessCrowds."
+      title: "How does EndlessCrowds work?"
+      introduction: "EndlessCrowds is a different - and collaborative - way to make your projects become reality."
+      legend_html: "Use this guide to decide if EndlessCrowds is the right tool for the job."
+      title_one: "Submit your project"
+      step_one: "Projects are dreams, and we receive them with open arms whether they are small, big, funny, serious, traditional, innovative... We love projects that require little money and have a big impact in their communities."
+      title_two: "Review"
+      step_two: "After we receive your project, it will be screened by our team of reviewers. The objective here is to give you tips in order to maximize the chances of your project becoming successful, as well as filtering nonsense projects. Remember, we want your project to be successful as much as you do."
+      title_three: "Let's go live!?"
+      step_three: "When your project is ready, it's time to go live and plan your campaign. During this period, you will need to engage as many people as possible to reach your goal."
+      title_four: "Launched!"
+      step_four: "Your success is our success. We will support you 100% of the way."
+      title_requirements: "Rules to submit your project to EndlessCrowds"
+      creative: "Creative and doable"
+      colective: "Benefits for backers"
+      nonprofit: "Non-financial rewards"
+      donation: "No philanthropic or “fund my life” projects"
+      video: "Make a video"
+      more_questions: "Ok, but tell me more about EndlessCrowds..."
+      title_magic: "Our magic formula"
+      magic: "We believe that providing a meeting place for people that share common values is the best way to turn projects into reality. Use EndlessCrowds as a channel to direct your network towards a COMMON objective."
+      title_money: "Where does the money to finance projects come from?"
+      money: "At least 50% will come from your own network of contacts. In this manner, EndlessCrowds is a way for you to get closer to the people that enjoy your work and expand this network through sharing in social networks, newspapers, blogs and, of course, your favorite bar."
+      title_work: "Does it take a lot of work?"
+      work: "Yes! There is no easy money on the internet. You will have to work a lot during your project, but the experience will be worth it - we assure you - and you will also have a much stronger network behind your project after EndlessCrowds."
+      title_costs: "How much does it cost to use EndlessCrowds?"
+      costs: "Submitting your project is free. When your project is approved and has reached its goal, EndlessCrowds will apply a 6% fee."
+      why: "Why EndlessCrowds?"
+      intro: "First of all, we believe strongly that crowdfunding is a new and better way to finance amazing projects."
+      why_one: "By creating a very strong bond with your network, you will open doors to new projects, partnerships and other unexpected connections."
+      why_two: "If the projects are well done, they can spread quickly to a lot of people, expanding your network and strengthening the base of people around your project."
+      why_three: "Minimum red tape and low financial risk. No interest rate, no entry fees... and lots of fun."
+    guidelines_tips:
+      title: "Almost there!"
+      subtitle: "Before submitting your project, it's good to think over a few important points."
+      introduction_html: "We know you can't wait to have your project online, but first answer <br> (on a piece of paper) the following questions."
+      legend_html: "Having clear answers to these questions will help tremendously in structuring your project, <br>increasing the chances that it will be successful."
+      title_one: "What inspired you to make this project?"
+      tip_one: "People only engage when they realize the importance of a cause, so be very clear about what is your inspiration and let it flow into your project."
+      title_two: "What is the focus?"
+      tip_two: "EndlessCrowds is an excellent way to take the first steps towards a larger goal, so define the purpose of your project well, as well as who will benefit from it. Clearly defining your objectives is one of the best ways to engage people."
+      title_three: "What is your goal?"
+      tip_three: "Calculate all costs for the project execution and rewards delivery. Don't forget to take into account your ability to engage people in order to define your financial goal."
+      title_four: "What is your deadline for the fundraising?"
+      tip_four: "Don't underestimate the work it takes to run an EndlessCrowds campaign. You will have to work hard during the entire period the project is live, so, it's recommended that you don't tire yourself too much in this process. Our recommendation: 40 days at least."
+      title_five: "Have you thought about the project rewards?"
+      tip_five: "Remember that rewards are public promises, so think carefully when defining them, as well as the logistics in delivering them to your backers. Our suggestion: offer mostly immaterial rewards: downloads, e-hugs, etc."
+      title_six: "Is your video ready?"
+      tip_six: "The video is the business card of your project. It's through it that the backers will get in touch with your cause. So, take special care in the script, audio and image quality. HD is recommended."
+      title_seven: "How will you mobilize your network?"
+      tip_seven: "You need to have a clear idea on how you will stir your network and convince it to back your project. Distribute your work weekly and change your approach with the network according to how close you are to it."
+      title_eight: "How will the money be used?"
+      tip_eight: "Create a GOOGLE DOCS spreadsheet and open your budget to show everyone how the money will be used. TRANSPARENCY is everything."
+      explore_curious: "Just looking around!"
+      explore_projects: "I want to explore the projects."
+      submit: "Next step!"
+      send_project: "I want to submit my project."
+      guide: "Download a complete guide with all the tips to elaborate your project in EndlessCrowds here."
+    privacy:
+      title: "Privacy Policy"
+    terms:
+      title: "Terms of use"
+  terms: "terms of use"
+  user:
+    backs_text:
+      many: "Backed this and other %{total} projects"
+      one: "Backed only this project until now"
+      two: "Backed this and 1 other project"
+    no_name: Unnamed
+    google_account: "Google Account"
+  users:
+    set_email:
+      site_title: 'Set your email address'
+      title: 'Set your email address'
+      submit: 'Save my email and proceed'
+    show:
+      attention: Attention
+      tabs:
+        backed_projects: "Backed projects"
+        created_projects: "Created projects"
+        comments: Comments
+        credits: Credits
+        settings: Settings
+        unsubscribes: Notifications
+      user_social:
+        email: "Send me an email"
+        facebook: "Profile on Facebook"
+        twitter: "Profile on Twitter"
+    backs:
+      anonymous: "Anonymous backing"
+      no_backs: "%{name} haven't backed any project yet. But we know it's just a matter of time! :D"
+      no_backs_current_user_html: "You haven't backed any project yet. How about <a href=\"/\">starting now</a>?"
+      no_reward: "You didn't pick a reward"
+      title: "Projects %{name} has backed"
+      title_current_user: "Projects I've backed"
+      your_reward: "Your reward"
+    unsubscribes:
+      title: "Choose from which projects you want to receive update notifications:"
+      updates: "I want to receive project updates"
+    current_user_fields:
+      bio_limit: 'only 140 characters'
+      updated: "Your information has been updated"
+      update_social_info: "Update info"
+      social_info: "Contact info"
+      twitter: "Twitter ( username )"
+      facebook_link: "Facebook profile (full link)"
+      other_link: "Personal Website"
+      change_password: "Change my password"
+      current_password_hint: "<i>We need your current password to confirm your changes.</i>"
+      email_hint: "Your email will only be used for communications from EndlessCrowds and from the projects you back. It won't be visible in your profile. When you back a project, we will give your email to the project owner so he can provide your rewards."
+      email_tooltip: "Click here to fill out your email..."
+      gravatar_hint_html: "Want to change your picture? Use %{link} with your email. It's as simple as uploading an image and works for other sites as well ;)"
+      local_avatar: "My avatar"
+      submit_text: "Choose your picture"
+      submit: "Submit"
+      my_data: "My profile"
+      newsletter: "I want to receive news from EndlessCrowds via email"
+      password_hint: "<i>Leave blank if you don't want to change it.</i>"
+    header:
+      bio_tooltip: "Click here to write about yourself..."
+      name_tooltip: "Click here to fill in your name..."
+    projects:
+      no_projects: "%{name} haven't started any project on EndlessCrowds yet."
+      no_projects_current_user_html: "You haven't submitted any project to EndlessCrowds yet. Let the inspiration flow and %{link} to start!"
+      here: "click here"
+      title: "%{name}'s projects"
+      title_current_user: "My projects"
+  users_mailer:
+    notification_email:
+      alt: "You must enable images in order to correctly view this message."
+      forward: "Foward to your friends"
+      hello: Hi
+      intro: "You are receiving this message because you signed up on EndlessCrowds"
+      mailee: "Message delivered by Mailee.me"
+      salutation: "Sincerely,"
+      signature: "EndlessCrowds' Team"
+      unsubscribe: Unsubscribe
+      unsubscribe_long: "If you don't want to receive these emails anymore"
+      weblink: "View on the web"
+      whitelist: "Add contact"
+      whitelist_long: "Add our email to your contacts"
+  notifications:
+    backers:
+      to_backer:
+        subject: "Thank you! Your back for %{project} has been confirmed!"
+        text: "Success! <br />Your back has just been confirmed.<br /><br />Check: %{backer_name}<br />%{backer_value}<br />%{reward}<br /><br />%{project_name}"
+    updates:
+      subject: "If the league! Update of %{project_name} by %{project_owner}: %{update_title}"
+      text: "%{update_title}<br />%{update_text}<br />Comments? Send it on in the project page: <a href='%{project_link}'>%{project_name}</a>."

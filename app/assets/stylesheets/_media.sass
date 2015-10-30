@@ -1,0 +1,40 @@
+
+// Make sure to add these into foundation_and_overrides
+// if you change them from the default
+// // foundation defaults:
+// $small-range: (0em, 40em); /* 0, 640px */
+// $medium-range: (40.063em, 64em); /* 641px, 1024px */
+// $large-range: (64.063em, 90em); /* 1025px, 1440px */
+// $xlarge-range: (90.063em, 120em); /* 1441px, 1920px */
+// $xxlarge-range: (120.063em); /* 1921px */
+
+$media-mobile-max: 40em
+$media-tablet-min: 40.063em
+$media-tablet-max: 1049
+$media-desktop-min: 1050px
+$media-large-desktop-min: 1300px
+
+
+// ----------------------------------------------
+// ADD THE FOLLOWING AT THE END OF EACH SASS FILE
+// WITH RESPONSIVE OVERRIDES
+// ----------------------------------------------
+
+// RESPONSIVE DESIGN STYLES:
+
+// 1. Media Changes for Mobile ONLY
+@media screen and (max-width: $media-mobile-max)
+
+// 2. Media Changes for Mobile AND Tablet
+@media screen and (max-width: $media-tablet-max)
+
+// Media Changes for Tablet ONLY
+@media screen and (min-width: $media-tablet-min) and (max-width: $media-tablet-max)
+
+// 4. Style changes for Desktop only
+
+// 4a. confined desktop
+@media screen and (min-width: $media-desktop-min)
+
+// 4a. expanded desktop
+@media screen and (min-width: $media-large-desktop-min)

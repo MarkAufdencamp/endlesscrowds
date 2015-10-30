@@ -1,0 +1,30 @@
+- project = @notification.project
+|Hello #{project.user.name},
+br
+|First of all, congratulations on the successful project!
+br
+br
+|We've collected some very important information for those who had financed his project successfully here on #{Configuration[:company_name]}. Here are 4 litle things to note:
+br
+br
+|1 - You can download a spreadsheet with details of <strong>psupporters (name, reward, address, etc..)</strong> at any time in the<strong>ABA Report</strong> page of your project.
+br
+br
+|2 -  Also, we will need some information to <strong> issuing the Invoice </strong> for the #{Configuration[:company_name]} service. We will use the data filled in your profile on #{Configuration[:company_name]}. Note that the information that is located in your profile is the informatoin we use when the invoice is issued (ie, if <strong> for corporations, we need the data of your organization in your profile </strong>).
+br
+br
+|3 -  We will send the invoice to you up until the last day of the month that funding has ended for the project on #{Configuration[:company_name]}. If your project has ended after the 24th of the month, we will issue issue an invoice the following month.
+br
+br
+|4 - To finish up, , here's one of the most important assets of your campaign: the #{link_to 'Support Forum', 'https://endlesscrowds.zendesk.com/home'}. Read there for tips on how to deal with the rewards and keep around the community of people that you created with your project.
+br
+br
+|Any other questions, please contact us through our Support:
+br
+= link_to 'https://endlesscrowds.zendesk.com/home', 'https://endlesscrowds.zendesk.com/home'
+br
+br
+|Regards,
+br
+br
+|The #{Configuration[:company_name]} team

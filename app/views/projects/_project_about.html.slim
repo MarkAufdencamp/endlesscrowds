@@ -1,0 +1,26 @@
+.midia
+  - if @project.display_video_embed_url
+    .video
+      iframe src="#{@project.display_video_embed_url}" width="600" height="403" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen
+  - else
+    .image
+      = image_tag @project.uploaded_image
+.social
+    ul
+      li.embed
+        = link_to '#embed', id: 'embed_link' do
+          = image_tag "catarse/embed_icon19x9.png", title: t('projects.show.share.embed_title')
+          = t('projects.show.share.embed')
+    .clear
+.text
+  h2= t('projects.show.about_title').html_safe
+  .clearfix
+  = sanitize(@project.about, tags: %w(b br i u span h3 h4 ul ol li blockquote))
+
+.share-buttons
+  h2
+    | Share this
+    span.blue.bold  Project
+  div class="share-twitter" data-url="#{(defined?(url) ? url : request.url)}" data-text="#{t('projects.twitter.take_a_look', :name => @project.name)}" data-title="Tweet"
+  div class="share-facebook" data-url="#{(defined?(url) ? url : request.url)}" data-text="#{t('projects.twitter.take_a_look', :name => @project.name)}" data-title="Like"
+  div class="share-googleplus" data-url="#{(defined?(url) ? url : request.url)}" data-text="#{t('projects.twitter.take_a_look', :name => @project.name)}" data-title="+1"
