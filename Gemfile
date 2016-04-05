@@ -17,7 +17,7 @@ gem 'state_machine', require: 'state_machine/core'
 gem 'paper_trail', '~> 2.7.1'
 
 #Errbit for e.alfajango.com
-gem 'airbrake', '3.1.6'
+#gem 'airbrake', '3.1.6'
 
 # Database and data related
 gem 'pg'
@@ -30,9 +30,9 @@ gem 'schema_associations'
 # Comment these out when running rake db:migrate for the first time
 #-----------------------------------------------------
 # Payment engine using Paypal
-#gem 'catarse_paypal_express', git: 'git://github.com/scouttyg/catarse_paypal_express.git'
+gem 'catarse_paypal_express', git: 'git://github.com/scouttyg/catarse_paypal_express.git'
 #gem 'catarse_paypal_express',           path: '../catarse_paypal_express'
-#gem 'catarse_wepay', git: 'git://github.com/alfajango/catarse_wepay.git', branch: 'alfajango'
+gem 'catarse_wepay', git: 'git://github.com/alfajango/catarse_wepay.git', branch: 'alfajango'
 #gem 'catarse_wepay', path: '~/os/catarse_wepay'
 #-----------------------------------------------------
 
@@ -84,11 +84,11 @@ gem 'has_scope'
 gem 'spectator-validates_email',  require: 'validates_email'
 gem 'video_info', '>= 1.1.1'
 gem 'enumerate_it'
-gem 'httparty', '~> 0.6.1' # this version is required by moip gem, otherwise payment confirmation will break
+#gem 'httparty', '~> 0.6.1' # this version is required by moip gem, otherwise payment confirmation will break
 
 
 # Payment
-gem 'moip', git: 'git://github.com/catarse/moip-ruby.git'
+#gem 'moip', git: 'git://github.com/catarse/moip-ruby.git'
 gem 'activemerchant', '>= 1.17.0', require: 'active_merchant'
 gem 'httpclient',     '>= 2.2.5'
 
@@ -118,7 +118,7 @@ end
 group :development do
   gem "letter_opener"
   gem 'foreman'
-  gem 'better_errors'
+  gem 'better_errors', '= 1.1.0'
   gem 'binding_of_caller'
   #gem 'rack-mini-profiler'
   gem 'quiet_assets'
@@ -127,6 +127,9 @@ end
 group :test, :development do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'iso8601', '= 0.8.7'
+  gem 'yard'
+  gem 'watir-webdriver'
 end
 
 group :test do
