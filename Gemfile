@@ -77,7 +77,8 @@ gem 'rmagick'
 
 # Other Tools
 gem 'ranked-model'
-gem 'feedzirra'
+#gem 'feedzirra'
+gem 'feedjira'
 gem 'validation_reflection',      git: 'git://github.com/ncri/validation_reflection.git'
 gem 'inherited_resources',        '1.3.1'
 gem 'has_scope'
@@ -153,7 +154,7 @@ end
 # FIXME: Not-anymore-on-development
 # Gems that are with 1 or more years on the vacuum
 gem 'weekdays'
-gem "rack-timeout"
+#gem "rack-timeout"
 
 # TODO: Take a look on dependencies. Why not auto_html?
 gem 'rails_autolink', '~> 1.0.7'
