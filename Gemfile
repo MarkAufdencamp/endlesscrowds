@@ -1,11 +1,131 @@
 source 'https://rubygems.org'
 
 # For heroku
-ruby '1.9.3'
+ruby '2.2.4'
+gem 'rails', '3.2.22.2'
 
-gem 'rails',    '3.2.13'
-gem 'sidekiq',  '~> 2.7.5'
+# Bundle edge Rails instead:
+# gem 'rails', :git => 'git://github.com/rails/rails.git'
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails'
+  gem 'coffee-rails'
+
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer', :platforms => :ruby
+
+  #gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier'
+end
+
+gem 'jquery-rails'
+
+# To use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.0.0'
+
+# To use Jbuilder templates for JSON
+# gem 'jbuilder'
+
+# Use unicorn as the app server
+# gem 'unicorn'
+
+# Deploy with Capistrano
+# gem 'capistrano'
+
+# To use debugger
+# gem 'debugger'
+
+# Database
+gem 'pg'
+# PostgreSQL native dependency:
+#  postgres
+#  postgres-server
+gem 'pg_search'
+gem 'postgres-copy'
+gem 'schema_plus'
+gem 'schema_associations'
+
+# Template
+gem 'slim-rails'
+
+# Markup
+# TODO: Take a look on dependencies
+gem 'RedCloth'
+
+# JS
+# InitJS requires running generator post install for new/updated? projects
+#  rails g initjs:install
+gem 'initjs'
+
+# Layout
+gem 'foundation-rails'
+#gem 'foundation-rails', '~> 5.4', '>= 5.4.5.0'
+# Foundation requires running generator post install for new/updated? projects
+#  rails g foundation:install
+#gem 'unsemantic_rails'
+
+# Model
+# paranoid stuff
+gem 'paper_trail'
+
+# Decorator
+gem 'draper'
+
+# Authentication
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+
+# Authorization
+# See https://github.com/ryanb/cancan/tree/2.0 for help about this
+# In resume: this version of cancan allow checking for authorization on specific fields on the model
+#gem 'cancan', git: 'git://github.com/ryanb/cancan.git', branch: '2.0', ref: 'f1cebde51a87be149b4970a3287826bb63c0ac0b'
+gem 'cancan', git: 'git://github.com/ryanb/cancan.git', branch: '2.0'
+
+# Encryption
+gem 'ezcrypto'
+# EzCrypto native dependency:
+#  openssl 
+
+# Background Job Processing
+gem 'sidekiq'
+gem 'concurrent-ruby'
+gem 'connection_pool'
+gem 'redis'
+
 gem 'sinatra', require: false # required by sidekiq web interface mounted on /sidekiq
+group :development do
+  gem 'minitest'
+end
+ 
+# Form builder
+gem 'formtastic'
+
+# Text to HTML
+# Syntax and structure of gem were changed in 2.0, use 1.6.4
+gem 'auto_html', '~> 1.6', '>= 1.6.4'
+
+# Paginator
+gem 'kaminari'
+
+# Content Upload
+gem 'carrierwave'
+
+# Image Manipulation
+gem 'rmagick'
+# RMagick native dependency:
+#  ghostscript
+#  ImageMagick
+
+# Feed
+# gem 'feedzirra'
+gem 'feedjira'
+# FeedJira/Loofah native dependency:
+#  libxml2
+#  libxslt
 
 # Turns every field on a editable one
 gem 'best_in_place'
@@ -13,122 +133,62 @@ gem 'best_in_place'
 # State machine for attributes on models
 gem 'state_machine', require: 'state_machine/core'
 
-# paranoid stuff
-gem 'paper_trail', '~> 2.7.1'
-
-#Errbit for e.alfajango.com
-#gem 'airbrake', '3.1.6'
-
-# Database and data related
-gem 'pg'
-gem 'pg_search'
-gem 'postgres-copy'
-gem 'schema_plus'
-gem 'schema_associations'
-
-#-----------------------------------------------------
-# Comment these out when running rake db:migrate for the first time
-#-----------------------------------------------------
-# Payment engine using Paypal
-gem 'catarse_paypal_express', git: 'git://github.com/scouttyg/catarse_paypal_express.git'
-#gem 'catarse_paypal_express',           path: '../catarse_paypal_express'
-gem 'catarse_wepay', git: 'git://github.com/alfajango/catarse_wepay.git', branch: 'alfajango'
-#gem 'catarse_wepay', path: '~/os/catarse_wepay'
-#-----------------------------------------------------
-
-# Payment engine using Moip
-#gem 'catarse_moip',           git: 'git://github.com/catarse/catarse_moip.git', ref: '388b7bc'
-#gem 'catarse_moip',           path: '../catarse_moip'
-
-
-# Decorators
-gem 'draper'
-
-# Frontend stuff
-gem 'slim-rails', '~> 1.1.1'
-gem 'jquery-rails'
-gem 'initjs'
-
-# Authentication and Authorization
-gem 'omniauth'
-gem 'omniauth-twitter'
-gem 'omniauth-facebook', '1.4.0'
-gem 'devise'
-gem 'ezcrypto'
-
-# See https://github.com/ryanb/cancan/tree/2.0 for help about this
-# In resume: this version of cancan allow checking for authorization on specific fields on the model
-gem 'cancan', git: 'git://github.com/ryanb/cancan.git', branch: '2.0', ref: 'f1cebde51a87be149b4970a3287826bb63c0ac0b'
-
-# Email marketing
-gem 'catarse_mailchimp'
-
-# HTML manipulation and formatting
-gem 'formtastic',   '~> 2.1.1'
-gem "auto_html",    '= 1.4.2'
-gem 'kaminari'
-
-# CSS and styling
-gem 'foundation-rails'
-
-# Uploads
-gem 'carrierwave', '~> 0.8.0'
-gem 'rmagick'
-
-# Other Tools
 gem 'ranked-model'
-#gem 'feedzirra'
-gem 'feedjira'
-gem 'validation_reflection',      git: 'git://github.com/ncri/validation_reflection.git'
-gem 'inherited_resources',        '1.3.1'
+#gem 'validation_reflection',      git: 'git://github.com/ncri/validation_reflection.git'
+gem 'inherited_resources'
 gem 'has_scope'
-gem 'spectator-validates_email',  require: 'validates_email'
-gem 'video_info', '>= 1.1.1'
+gem 'spectator-validates_email', require: 'validates_email'
+gem 'video_info'
 gem 'enumerate_it'
-#gem 'httparty', '~> 0.6.1' # this version is required by moip gem, otherwise payment confirmation will break
 
+# FIXME: Not-anymore-on-development
+# Gems that are with 1 or more years on the vacuum
+gem 'weekdays'
+#gem "rack-timeout"
+# TODO: Take a look on dependencies. Why not auto_html?
+gem 'rails_autolink'
 
 # Payment
 #gem 'moip', git: 'git://github.com/catarse/moip-ruby.git'
-gem 'activemerchant', '>= 1.17.0', require: 'active_merchant'
-gem 'httpclient',     '>= 2.2.5'
+#gem 'httparty', '~> 0.6.1' # this version is required by moip gem, otherwise payment confirmation will break
+#-----------------------------------------------------
+# Comment these out when running rake db:migrate for the first time
+#-----------------------------------------------------
+# Catarse Paypal
+gem 'catarse_paypal_express', git: 'git://github.com/scouttyg/catarse_paypal_express.git'
+# Catarse WePay
+gem 'catarse_wepay', git: 'git://github.com/alfajango/catarse_wepay.git', branch: 'alfajango'
+# Catarse Moip
+# gem 'catarse_moip', git: 'git://github.com/catarse/catarse_moip.git'. ref: '388b7bc'
 
-group :production do
+gem 'activemerchant', require: 'active_merchant'
+gem 'httpclient'
 
-  # Gem used to handle image uploading
-  gem 'fog', '>= 1.3.1'
+# Email marketing
+# Catarse MailChimp
+gem 'catarse_mailchimp'
 
-  # Workers, forks and all that jazz
-  gem 'unicorn'
-
-  # Enabling Gzip on Heroku
-  # If you don't use Heroku, please comment the line below.
-  gem 'heroku-deflater', '>= 0.4.1'
-
-
-  # Monitoring with the new new relic
-  gem 'newrelic_rpm'
-
-  # Using dalli and memcachier have not presented significative performance gains
-  # Probably this is due to our pattern of cache usage
-  # + the lack of concurrent procs in our deploy
-  #gem 'memcachier'
-  #gem 'dalli'
-end
 
 group :development do
-  gem "letter_opener"
+  # Mailer - Devise confirmation/passwd reset
+  gem 'letter_opener'
+
+  # Recomended not to install in Gemfile - https://github.com/ddollar/foreman
   gem 'foreman'
-  gem 'better_errors', '= 1.1.0'
+
+  # Railscast #402
+  gem 'better_errors'
   gem 'binding_of_caller'
-  #gem 'rack-mini-profiler'
-  gem 'quiet_assets'
+  gem 'meta_request'
+
+  gem 'rack-mini-profiler'
+  #gem 'quiet_assets'
 end
 
 group :test, :development do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
-  gem 'iso8601', '= 0.8.7'
+  #gem 'iso8601', '= 0.8.7'
   gem 'yard'
   gem 'watir-webdriver'
 end
@@ -137,27 +197,42 @@ group :test do
   gem 'launchy'
   gem 'database_cleaner'
   gem 'shoulda'
-  gem 'capybara',   '~> 2.0.2'
+  gem 'capybara'
   gem 'jasmine'
   gem 'coveralls', require: false
 end
 
-
 group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
-  gem "compass-rails"
-  gem 'uglifier'
+  # Compass style framework
+  gem 'compass-rails'
   gem 'compass-960-plugin'
+  gem 'modernizr-rails'
 end
 
-# FIXME: Not-anymore-on-development
-# Gems that are with 1 or more years on the vacuum
-gem 'weekdays'
-#gem "rack-timeout"
+group :production do
+  # Cloud services
+  # Gem used to handle image uploading
+  gem 'fog'
 
-# TODO: Take a look on dependencies. Why not auto_html?
-gem 'rails_autolink', '~> 1.0.7'
+  # Workers, forks and all that jazz
+  gem 'unicorn'
 
-# TODO: Take a look on dependencies
-gem "RedCloth"
+  # Enabling Gzip on Heroku
+  # If you don't use Heroku, please comment the line below.
+  #gem 'heroku-deflater'
+
+  # Monitoring
+  #gem 'newrelic_rpm'
+  
+  # Using dalli and memcachier have not presented significative performance gains
+  # Probably this is due to our pattern of cache usage
+  # + the lack of concurrent procs in our deploy
+  #gem 'memcachier'
+  #gem 'dalli'
+end
+
+
+#Errbit for e.alfajango.com
+#gem 'airbrake', '3.1.6'
+
+gem 'test-unit', '~> 3.1', '>= 3.1.8'
