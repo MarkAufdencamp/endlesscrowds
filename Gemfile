@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 # For heroku
 ruby '2.2.4'
+# ruby native dependencies:
+#   libyaml - required for psych
 gem 'rails', '3.2.22.2'
 
 # Bundle edge Rails instead:
