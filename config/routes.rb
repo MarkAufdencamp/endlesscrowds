@@ -1,6 +1,6 @@
 require 'sidekiq/web'
 
-Catarse::Application.routes.draw do
+Endlesscrowds::Application.routes.draw do
   match '/thank_you' => "static#thank_you"
   devise_for :users, controllers: { omniauth_callbacks: "omniauth_callbacks" }
 

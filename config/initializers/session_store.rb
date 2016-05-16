@@ -2,9 +2,9 @@
 
 if Rails.env.production? && defined? Configuration
   if Configuration[:base_domain]
-    Catarse::Application.config.session_store :cookie_store, key: '_catarse_session', domain: Configuration[:base_domain]
+    Endlesscrowds::Application.config.session_store :cookie_store, key: '_endlesscrowds_session', domain: Configuration[:base_domain]
   else
-    Catarse::Application.config.session_store :cookie_store, key: '_catarse_session'
+    Endlesscrowds::Application.config.session_store :cookie_store, key: '_endlesscrowds_session'
   end
 else
   # We should be running initial migrations to be here. The Configuration model does not yet exist to be read from.

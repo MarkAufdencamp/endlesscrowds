@@ -36,7 +36,7 @@ html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb=
     /[if lt IE 9]
       = javascript_include_tag "http://html5shiv.googlecode.com/svn/trunk/html5.js"
     = javascript_include_tag :application
-    = javascript_include_tag "vendor/modernizr"
+    = javascript_include_tag :modernizr
     = yield :js_templates
     = render '/layouts/analytics'
 
