@@ -46,6 +46,9 @@
             p.input.check
               = f.check_box :newsletter
               = f.label :newsletter, t('users.current_user_fields.newsletter')
+            p.input
+              = f.hidden_field :provider, :value => 'devise'
+              
             p.action
               .bootstrap-twitter
                 = f.submit t('registrations.new.submit'), class: 'btn', id: 'user_submit'
