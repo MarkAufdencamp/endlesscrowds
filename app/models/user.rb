@@ -32,6 +32,7 @@ class User < ActiveRecord::Base
     :remember_me,
     :name,
     :nickname,
+    :provider,
     :image_url,
     :uploaded_image,
     :bio,
