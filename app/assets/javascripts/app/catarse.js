@@ -1,21 +1,21 @@
 var CATARSE = {
   Adm: {},
   requireLogin: function(event, customUrl){
-    event.preventDefault()
-    var url = null
+    event.preventDefault();
+    var url = null;
     if(typeof(customUrl) != 'undefined') {
-      url = customUrl
+      url = customUrl;
     } else {
       if($(event.target).is('a')){
-        url = $(event.target).attr('href')
+        url = $(event.target).attr('href');
       } else {
-        url = $(event.target).parentsUntil('form').parent().attr('action')
+        url = $(event.target).parentsUntil('form').parent().attr('action');
       }
     }
     if(CATARSE.currentUser)
-      location.href = url
+      location.href = url;
     else
-      location.href = "/login"
+      location.href = "/login";
     //CATARSE.router.navigate("login/" + encodeURIComponent(url), true)
   },
 
@@ -92,7 +92,7 @@ var CATARSE = {
     },
 
     trackUserClickOnPaymentButton: function(){
-      this.trackOnMixPanel('form.moip input[type="submit"]', 'click', 'Made a payment')
+      this.trackOnMixPanel('form.moip input[type="submit"]', 'click', 'Made a payment');
     },
 
     trackUserClickOnBackButton: function(){
@@ -111,11 +111,11 @@ var CATARSE = {
 
   Common: {
     init: function(){
-      CATARSE.locale = $('#main_content').data("locale")
-      CATARSE.currentUser = $('#main_content').data("user")
+      CATARSE.locale = $('#main_content').data("locale");
+      CATARSE.currentUser = $('#main_content').data("user");
       // Common init for every action
-      CATARSE.router = new CATARSE.Router()
-      CATARSE.layout = new CATARSE.LayoutsApplicationView({el: $('html')})
+      CATARSE.router = new CATARSE.Router();
+      CATARSE.layout = new CATARSE.LayoutsApplicationView({el: $('html')});
       $(".best_in_place").best_in_place();
 
       CATARSE.MixPanel.initialize();
@@ -126,7 +126,7 @@ var CATARSE = {
     finish: function(){
       // Common finish for every action
       if (Backbone.history)
-        Backbone.history.start()
+        Backbone.history.start();
     }
   },
   explore:{
@@ -200,4 +200,4 @@ var CATARSE = {
       window.view = new CATARSE.UsersShowView({el: $("body") });
     }
   },
-}
+};

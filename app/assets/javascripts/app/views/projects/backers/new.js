@@ -10,6 +10,7 @@ CATARSE.BackersNewView = Backbone.View.extend({
         $('#backer_value').trigger('keyup');
       }
     });
+    
     everything_ok = function(){
       var all_ok = true
       check_credits()
@@ -23,6 +24,7 @@ CATARSE.BackersNewView = Backbone.View.extend({
         $('#backer_submit').attr('disabled', true)
       }
     }
+    
     check_credits = function(){
       var credits = parseInt($('#credits').val())
       var value = parseInt($('#backer_value').val())
@@ -33,6 +35,7 @@ CATARSE.BackersNewView = Backbone.View.extend({
         $('#backer_credits').attr('disabled', false)
       }
     }
+    
     reward_ok = function(){
       if(!$('input[type=radio]:checked').val())
         return false
@@ -48,6 +51,7 @@ CATARSE.BackersNewView = Backbone.View.extend({
       }
       return true
     }
+    
     value_ok = function(){
       var value = $('#backer_value').val()
       if(/^(\d+)$/.test(value) && parseInt(value) >= 1){
@@ -59,6 +63,7 @@ CATARSE.BackersNewView = Backbone.View.extend({
         return false
       }
     }
+    
     $('input[type=radio]').click(function(){
       var id = /^backer_reward_id_(\d+)$/.exec($(this).attr('id'))
       id = parseFloat(id[1])
@@ -71,6 +76,7 @@ CATARSE.BackersNewView = Backbone.View.extend({
       $(this).parent().parent().addClass('selected')
       everything_ok()
     })
+    
     $('#backer_value').keyup(function(){
       user_set = true
       var reward = $('input[type=radio]:checked')
@@ -89,6 +95,7 @@ CATARSE.BackersNewView = Backbone.View.extend({
       }
       everything_ok()
     })
+    
     $('#backer_value').numeric(false)
     $('.sold_out').parent().find('input[type=radio]').attr('disabled', true)
     if($('input[type=radio]:checked').length == 0)
@@ -96,6 +103,7 @@ CATARSE.BackersNewView = Backbone.View.extend({
     if($('#backer_value').val())
       everything_ok()
     $('#backer_value').focus()
+    
     $('#backer_anonymous').click(function(){
       if($(this).is(':checked')){
         $('#anonymous_warning').slideDown(200)
@@ -103,6 +111,7 @@ CATARSE.BackersNewView = Backbone.View.extend({
         $('#anonymous_warning').slideUp(200)
       }
     })
+    
     $('input[type=radio]:checked').parent().parent().addClass('selected')
 
     // Colapse all faq texts

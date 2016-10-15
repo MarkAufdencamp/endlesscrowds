@@ -1,1 +1,1 @@
-CATARSE.Backer = Backbone.Model.extend({})
+CATARSE.Backer = Backbone.Model.extend({});

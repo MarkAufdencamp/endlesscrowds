@@ -1,1 +1,1 @@
-CATARSE.UserBack = Backbone.Model.extend({})
+CATARSE.UserBack = Backbone.Model.extend({});

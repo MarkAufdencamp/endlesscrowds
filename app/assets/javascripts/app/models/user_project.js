@@ -1,1 +1,1 @@
-CATARSE.UserProject = Backbone.Model.extend({})
+CATARSE.UserProject = Backbone.Model.extend({});
