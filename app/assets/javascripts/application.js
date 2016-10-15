@@ -43,4 +43,4 @@ $(document).ready( function() {
 });
 
 
-$(function(){ $(document).foundation(); });
+//$(function(){ $(document).foundation(); });
