@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 ruby '2.2.4'
 # ruby native dependencies:
 #   libyaml - required for psych
-gem 'rails', '3.2.22.2'
+gem 'rails', '3.2.22.5'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -157,11 +157,19 @@ gem 'rails_autolink'
 # Comment these out when running rake db:migrate for the first time
 #-----------------------------------------------------
 # Catarse Paypal
-gem 'catarse_paypal_express', git: 'git://github.com/scouttyg/catarse_paypal_express.git'
+#gem 'catarse_paypal_express', git: 'git://github.com/scouttyg/catarse_paypal_express.git'
+#gem 'catarse_paypal_express', git: 'git://github.com/EndlessCrowds/catarse_paypal_express.git'
+#gem 'catarse_paypal_express', git: 'git://bitbucket.org:maufdencamp/catarse_paypal_express.git'
+gem 'catarse_paypal_express', :path => '/Users/maaufden/projects/github/catarse_paypal_express'
 # Catarse WePay
-gem 'catarse_wepay', git: 'git://github.com/alfajango/catarse_wepay.git', branch: 'alfajango'
+#gem 'catarse_wepay', git: 'git://github.com/alfajango/catarse_wepay.git', branch: 'alfajango'
+#gem 'catarse_wepay', git: 'git://github.com/EndlessCrowds/catarse_wepay.git'
+#gem 'catarse_wepay', git: 'git://bitbucket.org:maufdencamp/catarse_wepay.git'
+gem 'catarse_wepay', :path => '/Users/maaufden/projects/github/catarse_wepay'
 # Catarse Moip
 # gem 'catarse_moip', git: 'git://github.com/catarse/catarse_moip.git'. ref: '388b7bc'
+gem 'catarse_payment_paypal_express', :path => '/Users/maaufden/projects/github/catarse_payment_paypal_express'
+gem 'catarse_payment_wepay', :path => '/Users/maaufden/projects/github/catarse_payment_wepay'
 
 gem 'activemerchant', require: 'active_merchant'
 gem 'httpclient'
