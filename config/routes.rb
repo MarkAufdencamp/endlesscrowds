@@ -2,9 +2,9 @@ require 'sidekiq/web'
 
 Endlesscrowds::Application.routes.draw do
   match '/thank_you' => "static#thank_you"
-  devise_for :users, controllers: { omniauth_callbacks: "omniauth_callbacks" }
-
-  devise_for :users, controllers: { omniauth_callbacks: "omniauth_callbacks" }
+  devise_for :users, controllers: {
+    omniauth_callbacks: "omniauth_callbacks"
+  }
   check_user_admin = lambda { |request| request.env["warden"].authenticate? and request.env['warden'].user.admin }
 
   # Mountable engines
@@ -14,6 +14,7 @@ Endlesscrowds::Application.routes.draw do
 
 # Comment this out when running rake db:migrate for the first time
   mount CatarseWepay::Engine => "/", as: "catarse_wepay"
+  mount CatarsePaypalExpress::Engine => "/", :as => "catarse_paypal_express"
 
   # Non production routes
   if Rails.env.development?
