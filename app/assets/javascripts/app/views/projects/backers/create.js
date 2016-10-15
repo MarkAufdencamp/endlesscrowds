@@ -237,5 +237,9 @@ CATARSE.BackersCreateView = Backbone.View.extend({
     $('.tab_container #payment_menu a').removeClass('selected');
     this.$('.tab_container #payment_menu a.enabled:first').trigger('click')
     this.reviewForm = new CATARSE.ReviewForm();
+
+	$('#payment .tab_container').show()
+	$('#payment_menu').show()
+	$('#payment').show()
   }
 })
