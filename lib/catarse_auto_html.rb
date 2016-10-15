@@ -1,4 +1,14 @@
+require 'redcloth'
+
 module CatarseAutoHtml
+  AutoHtml.add_filter(:redcloth).with({}) do |text, options|
+    result = RedCloth.new(text).to_html
+    if options and options[:target] and options[:target].to_sym == :_blank
+      result.gsub!(/<a/, '<a target="_blank"')
+    end
+    result
+  end
+
   AutoHtml.add_filter(:email_image).with(width: 200) do |text, options|
     text.gsub(/http(s)?:\/\/.+\.(jpg|jpeg|bmp|gif|png)(\?\S+)?/i) do |match|
       width = options[:width]
